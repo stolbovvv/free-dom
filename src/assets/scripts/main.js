@@ -6,7 +6,7 @@ function renderScheduleCard(event) {
 	return `
 		<div class="card-schedule">
 			<a class="card-schedule__link" href="${event.link ?? '#'}">
-				<img class="card-schedule__image" src="${event.img ?? './assets/images/content-schedule-1.jpg'}" alt="${event.title}">
+				<img class="card-schedule__image" src="${event.img}" alt="${event.title}">
 			</a>
 			<div class="card-schedule__body">
 				<p class="card-schedule__name">${event.title}</p>
