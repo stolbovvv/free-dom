@@ -28,8 +28,6 @@
 }
 
 .schedule__days-grid {
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
 	background-color: var(--clr-primary-400);
 	color: var(--clr-primary-100);
 }

@@ -17,6 +17,11 @@
 	text-align: center;
 }
 
+.js-schedule-days-grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
 .js-schedule-events-grid {
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
@@ -63,4 +68,10 @@
 
 .js-schedule-event {
 	height: 100%;
+}
+
+@media screen and (width < 80em) {
+	.js-schedule-days-grid {
+		grid-template-columns: 1fr;
+	}
 }

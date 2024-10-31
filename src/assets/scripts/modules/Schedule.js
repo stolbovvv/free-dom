@@ -8,6 +8,7 @@ export class Schedule {
 		this.scheduleStart = startOfWeek(new Date(), { weekStartsOn: 1 });
 		this.hours = Array.from({ length: 12 }, (_, i) => i + 8);
 		this.days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+		this.smallDesktopWidthMediaQuery = window.matchMedia('(max-width: 80em)');
 
 		this.renderEvent = renderEvent;
 
@@ -53,38 +54,51 @@ export class Schedule {
 	}
 
 	generateWeeklyCalendar() {
-		if (this.daysGrid) {
-			let html = '';
+		if (this.daysGrid) this.daysGrid.innerHTML = '';
+		if (this.eventsGrid) this.eventsGrid.innerHTML = '';
 
+		const week = format(this.scheduleStart, 'yyyy-MM-dd');
+		const events = this.scheduleEvents[week] || [];
+
+		// Собираем уникальные часы с мероприятиями
+		const uniqueHours = new Set();
+		events.forEach((event) => {
+			const eventHour = event.time.split(':').map(Number)[0];
+			uniqueHours.add(eventHour);
+		});
+
+		// Если событий нет, заполнять календарь не будем
+		if (uniqueHours.size === 0) return;
+
+		// Отображаем дни недели
+		if (this.daysGrid) {
+			let daysHtml = '';
 			this.days.forEach((day, index) => {
 				const date = format(addDays(this.scheduleStart, index), 'dd.MM', { locale: ru });
-
-				html += `<div class="js-schedule-day-slot">${day} ${date}</div>`;
+				daysHtml += `<div class="js-schedule-day-slot">${day} ${date}</div>`;
 			});
-
-			this.daysGrid.innerHTML = html;
+			this.daysGrid.innerHTML = daysHtml;
 		}
 
+		// Отображаем временные слоты для всех дней недели, только для уникальных часов с мероприятиями
 		if (this.eventsGrid) {
-			let html = '';
-
-			this.hours.forEach((hour) => {
-				const modifiedHour = hour < 10 ? `0${hour}` : `${hour}`;
-
+			let eventsHtml = '';
+			uniqueHours.forEach((hour) => {
+				const formattedHour = hour < 10 ? `0${hour}` : `${hour}`;
 				for (let i = 0; i < 7; i++) {
-					html += `
-						<div class="js-schedule-event-slot" id="js-schedule-day-${i}-hour-${hour}">
-							<span class="js-schedule-event-empty-text">Нет мероприятий</span>
-							<span class="js-schedule-event-empty-text">${modifiedHour}:00</span>
-						</div>
-					`;
+					const slotId = `js-schedule-day-${i}-hour-${hour}`;
+					eventsHtml += `
+				<div class="js-schedule-event-slot" id="${slotId}">
+				  <span class="js-schedule-event-empty-text">${formattedHour}:00</span>
+				</div>
+			  `;
 				}
 			});
+			this.eventsGrid.innerHTML = eventsHtml;
 
-			this.eventsGrid.innerHTML = html;
+			// Заполняем календарь мероприятиями
+			this.populateEvents();
 		}
-
-		this.populateEvents();
 	}
 
 	updateWeekDisplay() {
