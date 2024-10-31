@@ -1,0 +1,91 @@
+/* Component: Card Expert */
+
+.card-expert {
+	display: flex;
+	align-items: center;
+	gap: var(--space-10);
+	max-width: 50rem;
+}
+
+.card-expert__image {
+	flex: 1 1 auto;
+	width: calc(50% - var(--space-10));
+	max-width: 20.75rem;
+	height: 100%;
+	max-height: 23.12rem;
+	aspect-ratio: 5/6;
+	object-fit: cover;
+	object-position: center;
+	clip-path: polygon(6.25rem 0%, 100% 0, 100% 100%, 0 100%, 0 6.25rem);
+}
+
+.card-expert__image--big {
+	aspect-ratio: 2/3;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 6.25rem 100%, 0 calc(100% - 6.25rem));
+}
+
+.card-expert__image--clip-down {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 6.25rem 100%, 0 calc(100% - 6.25rem));
+}
+
+.card-expert__body {
+	flex: 1 1 auto;
+	width: 50%;
+}
+
+.card-expert__body > p {
+	padding-left: 1em;
+}
+
+.card-expert__body > *:last-child {
+	margin-bottom: 0;
+}
+
+.card-expert__heading {
+	transform: translateX(-2em);
+}
+
+.card-expert__foot {
+	display: flex;
+	justify-content: flex-end;
+}
+
+@media screen and (width < 80em) {
+	.card-expert__image,
+	.card-expert__image--big,
+	.card-expert__image--clip-down {
+		aspect-ratio: 1/1;
+		clip-path: polygon(3.175rem 0%, 100% 0, 100% 100%, 0 100%, 0 3.175rem);
+	}
+}
+
+@media screen and (width < 48em) {
+	.card-expert__image {
+		width: 12.5rem;
+	}
+}
+
+@media screen and (width < 36em) {
+	.card-expert {
+		flex-direction: column;
+		align-items: stretch;
+		max-width: none;
+	}
+
+	.card-expert__image {
+		width: 100%;
+		max-width: none;
+	}
+
+	.card-expert__body {
+		width: 100%;
+	}
+
+	.card-expert__heading {
+		transform: translateX(0);
+	}
+
+	.card-expert__foot {
+		justify-content: flex-start;
+	}
+}

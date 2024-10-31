@@ -1,0 +1,10 @@
+.date {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+.date__icon {
+	width: 1.5rem;
+	height: 1.5rem;
+}

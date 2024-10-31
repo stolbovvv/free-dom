@@ -1,0 +1,9 @@
+/* Component: Logo */
+
+.logo {
+	display: block;
+	border: 1px solid currentColor;
+	border-radius: 999rem;
+	padding: 1em 1.75em;
+	text-decoration: none;
+}

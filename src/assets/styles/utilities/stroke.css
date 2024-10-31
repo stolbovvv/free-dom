@@ -1,0 +1,41 @@
+/* Utilities: Stroke colors */
+
+.stroke-white {
+	stroke: var(--clr-neutral-100);
+}
+
+.stroke-light {
+	stroke: var(--clr-neutral-300);
+}
+
+.stroke-dark {
+	stroke: var(--clr-neutral-700);
+}
+
+.stroke-black {
+	stroke: var(--clr-neutral-900);
+}
+
+.stroke-primary {
+	stroke: var(--clr-primary-400);
+}
+
+.hover\:stroke-white:hover {
+	stroke: var(--clr-neutral-100);
+}
+
+.hover\:stroke-light:hover {
+	stroke: var(--clr-neutral-300);
+}
+
+.hover\:stroke-dark:hover {
+	stroke: var(--clr-neutral-700);
+}
+
+.hover\:stroke-black:hover {
+	stroke: var(--clr-neutral-900);
+}
+
+.hover\:stroke-primary:hover {
+	stroke: var(--clr-primary-400);
+}

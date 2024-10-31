@@ -1,0 +1,66 @@
+.js-schedule {
+	overflow: hidden;
+}
+
+.js-schedule-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.js-schedule-button-prev,
+.js-schedule-button-next {
+	cursor: pointer;
+}
+
+.js-schedule-week-display {
+	text-align: center;
+}
+
+.js-schedule-events-grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	border-top: 1px solid #dddddd;
+	border-left: 1px solid #dddddd;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.js-schedule-events-grid.fade-out {
+	opacity: 0;
+}
+
+.js-schedule-event-slot {
+	/* aspect-ratio: 3/2; */
+	height: 100%;
+	border-bottom: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+}
+
+.js-schedule-event-slot::before {
+	float: left;
+	padding-top: 60%;
+	content: "";
+}
+
+.js-schedule-event-slot::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.js-schedule-event-empty-text {
+	display: block;
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+	font-size: 0.875rem;
+	line-height: 1.4;
+	opacity: 0.5;
+}
+
+.js-schedule-event-empty-text + .js-schedule-event-empty-text {
+	margin-top: 0.25em;
+}
+
+.js-schedule-event {
+	height: 100%;
+}

@@ -1,0 +1,50 @@
+/* Font faces */
+
+@font-face {
+	font-family: "SF Pro Display";
+	src:
+		url("../../fonts/SFProDisplay-LightItalic.woff2") format("woff2"),
+		url("../../fonts/SFProDisplay-LightItalic.woff") format("woff");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF Pro Display";
+	src:
+		url("../../fonts/SFProDisplay-Light.woff2") format("woff2"),
+		url("../../fonts/SFProDisplay-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Montserrat Alternates";
+	src:
+		url("../../fonts/MontserratAlternates-Light.woff2") format("woff2"),
+		url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Montserrat Alternates";
+	src:
+		url("../../fonts/MontserratAlternates-ExtraLight.woff2") format("woff2"),
+		url("../../fonts/MontserratAlternates-ExtraLight.woff") format("woff");
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Prego";
+	src:
+		url("../../fonts/PregoRegular.woff2") format("woff2"),
+		url("../../fonts/PregoRegular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}

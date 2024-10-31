@@ -1,0 +1,71 @@
+/* Component: Card Review */
+
+.card-review {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-review__head {
+	display: flex;
+	align-items: flex-end;
+}
+
+.card-review__avatar {
+	flex: 0 0 auto;
+	width: 8.5rem;
+	height: 8.75rem;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.card-review__name {
+	margin: 0 0 0.25em -0.7em;
+}
+
+.card-review__body {
+	display: flex;
+	align-items: center;
+	gap: 1.875rem;
+	padding-left: 5.5rem;
+}
+
+.card-review__icon {
+	flex: 0 0 auto;
+	width: 4.375rem;
+	height: 4.375rem;
+}
+
+.card-review__text > *:first-child {
+	margin-top: 0;
+}
+
+.card-review__text > *:last-child {
+	margin-bottom: 0;
+}
+
+@media screen and (width < 48rem) {
+	.card-review {
+		gap: 0.625rem;
+	}
+
+	.card-review__avatar {
+		width: 5.625rem;
+		height: 5.625rem;
+	}
+
+	.card-review__body {
+		position: relative;
+		padding: 0;
+	}
+
+	.card-review__icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 2.25rem;
+		height: 2.25rem;
+		transform: translateY(calc(-100% - 0.625rem));
+	}
+}

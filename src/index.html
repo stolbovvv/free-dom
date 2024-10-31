@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<!-- Page options -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="width">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- Page information -->
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<title>Дом души</title>
+
+	<!-- Page favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+	<link rel="manifest" href="./site.webmanifest">
+
+	<!-- Page styles -->
+	<link rel="stylesheet" href="./assets/styles/main.css">
+
+	<!-- Page scripts -->
+	<script type="module" src="./assets/scripts/main.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header js-site-header">
+			<div class="header__container container">
+				<div class="header__logo">
+					<a class="header__logo-link" href="./">
+						<span class="logo">Лого</span>
+					</a>
+				</div>
+				<nav class="header__menu">
+					<button class="header__menu-burger burger js-site-navbar-button" data-menu-action="open">
+						<span class="burger__text">Меню</span>
+						<span class="burger__icon">
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+					<div class="header__menu-body">
+						<ul class="header__menu-list">
+							<li><a class="header__menu-link" href="./about.html">О проекте</a></li>
+							<li><a class="header__menu-link" href="./tariffs.html">Тарифы</a></li>
+							<li><a class="header__menu-link" href="./experts.html">Мастера</a></li>
+							<li><a class="header__menu-link" href="./library.html">Библиотека</a></li>
+							<li><a class="header__menu-link" href="./index.html#section-schedule">Расписание</a></li>
+							<li><a class="header__menu-link" href="./journal.html">Журнал</a></li>
+						</ul>
+						<div class="header__menu-foot">
+							<button class="header__menu-button button hover:stroke-white js-background-sound-trigger">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-volume.svg"></use>
+									</svg>
+								</span>
+							</button>
+							<a class="header__menu-button button hover:stroke-white" href="#">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-user.svg"></use>
+									</svg>
+								</span>
+								<span class="button__text">Личный кабинет</span>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div class="navbar js-site-navbar">
+			<div class="navbar__container container">
+				<div class="navbar__head">
+					<div class="navbar__logo">
+						<a class="navbar__logo-link" href="./">
+							<span class="logo">Лого</span>
+						</a>
+					</div>
+					<div class="navbar__body">
+						<button class="navbar__body-burger burger js-site-navbar-button" data-menu-action="close">
+							<span class="burger__text">Меню</span>
+							<span class="burger__icon">
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+						<div class="navbar__body-foot">
+							<button class="navbar__body-button button clr-white hover:stroke-primary js-background-sound-trigger">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-volume.svg"></use>
+									</svg>
+								</span>
+							</button>
+							<a class="navbar__body-button button clr-white hover:stroke-primary" href="#">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-user.svg"></use>
+									</svg>
+								</span>
+								<span class="button__text">Личный кабинет</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<nav class="navbar__menu">
+					<ul class="navbar__menu-list">
+						<li><a class="navbar__menu-link" href="./about.html">О проекте</a></li>
+						<li><a class="navbar__menu-link" href="./tariffs.html">Тарифы</a></li>
+						<li><a class="navbar__menu-link" href="./experts.html">Мастера</a></li>
+						<li><a class="navbar__menu-link" href="./library.html">Библиотека</a></li>
+						<li><a class="navbar__menu-link" href="./index.html#section-schedule">Расписание</a></li>
+						<li><a class="navbar__menu-link" href="./journal.html">Журнал</a></li>
+					</ul>
+					<div class="navbar__menu-foot">
+						<button class="navbar__menu-button button clr-white hover:stroke-primary js-background-sound-trigger">
+							<span class="button__icon">
+								<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+									<use href="./assets/icons/icon-volume.svg"></use>
+								</svg>
+							</span>
+						</button>
+						<a class="navbar__menu-button button clr-white hover:stroke-primary" href="#">
+							<span class="button__icon">
+								<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+									<use href="./assets/icons/icon-user.svg"></use>
+								</svg>
+							</span>
+							<span class="button__text">Личный кабинет</span>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<main class="main">
+			<section class="section-hero">
+				<div class="section-hero__decor">
+					<img src="./assets/images/decor-section-common.svg" aria-hidden="true" alt="">
+					<img src="./assets/images/decor-section-common.svg" aria-hidden="true" alt="">
+					<img src="./assets/images/decor-section-common.svg" aria-hidden="true" alt="">
+					<img src="./assets/images/decor-section-common.svg" aria-hidden="true" alt="">
+				</div>
+				<div class="section-hero__container container">
+					<div class="section-hero__head">
+						<img class="section-hero__head-image" src="./assets/images/decor-bird.png" aria-hidden="true" alt="">
+					</div>
+					<div class="section-hero__body">
+						<div class="section-hero__headings">
+							<h1 class="section-hero__heading">freeDom</h1>
+							<h2 class="section-hero__subheading">Клуб самопознания</h2>
+						</div>
+						<div class="section-hero__text">
+							<p class="fs-large">
+								<span class="fs-italic">Пространство знаний и практик,</span> помогающих обрести свободу, познать жизнь какой она есть, научиться жить в радости и
+								любви
+							</p>
+							<p class="fs-large">
+								<span class="fs-italic">Сообщество единомышленников</span> – истории жизни, поддержка и вдохновение, обмен опытом
+							</p>
+							<p class="fs-large">
+								<span class="fs-italic">Творческая мастерская</span> – картины, музыка, танец, голос, поэзия, фильмы
+							</p>
+						</div>
+						<div class="section-hero__foot">
+							<a class="button hover:stroke-light" href="#">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+									</svg>
+								</span>
+								<span class="button__text">Почувствовать свободу</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Секция "События" -->
+			<section class="section-events section splide" data-slider-id="section-events">
+				<img class="section-events__decor" src="./assets/images/decor-section-events.svg" aria-hidden="true" alt="">
+				<div class="section-events__container container">
+					<div class="section-events__head">
+						<h2 class="heading-2">События ДОМА</h2>
+						<div class="section-events__desktop-navigation" id="section-events-desktop-navigation">
+							<div class="splide__arrows" id="section-events-navigation">
+								<button class="splide__arrow splide__arrow--prev" type="button">
+									<svg class="icon" width="31" height="30" viewBox="0 0 31 30" stroke="currentColor">
+										<use href="./assets/icons/icon-arrow-left.svg"></use>
+									</svg>
+								</button>
+								<div class="splide__arrow-counter">
+									<span class="splide__arrow-index">00</span>
+									<span class="splide__arrow-total">00</span>
+								</div>
+								<button class="splide__arrow splide__arrow--next" type="button">
+									<svg class="icon" width="31" height="30" viewBox="0 0 31 30" stroke="currentColor">
+										<use href="./assets/icons/icon-arrow-right.svg"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-events__body splide__track">
+						<div class="section-events__grid splide__list">
+							<div class="card-event splide__slide">
+								<a href="#" class="card-event__link"><img class="card-event__image" src="./assets/images/content-event-1.png" alt=""></a>
+							</div>
+							<div class="card-event splide__slide">
+								<a href="#" class="card-event__link"><img class="card-event__image" src="./assets/images/content-event-2.png" alt=""></a>
+							</div>
+							<div class="card-event splide__slide">
+								<a href="#" class="card-event__link"><img class="card-event__image" src="./assets/images/content-event-1.png" alt=""></a>
+							</div>
+							<div class="card-event splide__slide">
+								<a href="#" class="card-event__link"><img class="card-event__image" src="./assets/images/content-event-2.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-events__mobile-navigation" id="section-events-mobile-navigation">
+						<!-- Контейнер навигации на мобильной версии -->
+					</div>
+
+					<a class="section-events__more button hover:stroke-light" href="#">
+						<span class="button__icon">
+							<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+								<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+							</svg>
+						</span>
+						<span class="button__text">К подробному расписанию</span>
+					</a>
+				</div>
+			</section>
+
+			<!-- Секция "Журнал" -->
+			<section class="section section-journal" id="section-journal">
+				<div class="section-journal__container container">
+					<div class="section-journal__head">
+						<h2 class="heading-2">Журнал FreeDom</h2>
+						<p class="section-journal__descr fs-large">
+							Пространство знаний и практик, помогающих обрести свободу, познать жизнь какой она есть,
+							научиться жить в радости
+							и любви
+						</p>
+					</div>
+					<div class="section-journal__body js-tabs" id="section-journal-tabs">
+
+						<div class="section-journal__tabs">
+							<button class="button-tab js-tabs-trigger" data-tab-id="1" type="button">Июнь</button>
+							<button class="button-tab js-tabs-trigger" data-tab-id="2" type="button">Июль</button>
+							<button class="button-tab js-tabs-trigger" data-tab-id="3" type="button">Август</button>
+						</div>
+
+						<div class="section-journal__content js-tabs-content" data-tab-id="1">
+							<h3 class="heading-3">Июнь</h3>
+							<div class="section-journal__slider splide" data-slider-id="section-journal">
+								<div class="section-journal__slider-track splide__track">
+									<div class="section-journal__slider-grid splide__list">
+										<div class="section-journal-slide splide__slide">
+											<div class="card-library">
+												<img class="card-library__image card-library__image--clip-bottom" src="./assets/images/content-journal-1.jpg" alt="">
+												<div class="card-library__body">
+													<h3 class="fs-large fs-italic">Искусство</h3>
+													<p>Материал Вики про детей, искусство и жизнь - текст+фото</p>
+												</div>
+											</div>
+										</div>
+										<div class="section-journal-slide splide__slide">
+											<div class="card-library">
+												<img class="card-library__image card-library__image--clip-bottom" src="./assets/images/content-journal-1.jpg" alt="">
+												<div class="card-library__body">
+													<h3 class="fs-large fs-italic">Утро</h3>
+													<p>Материал Вики про детей, искусство и жизнь - текст+фото</p>
+												</div>
+											</div>
+										</div>
+										<div class="section-journal-slide splide__slide">
+											<div class="card-library">
+												<img class="card-library__image card-library__image--clip-bottom" src="./assets/images/content-journal-1.jpg" alt="">
+												<div class="card-library__body">
+													<h3 class="fs-large fs-italic">Путешествия внутри и снаружи</h3>
+													<p>Фильм про декабрьское суфийское поэтическое путешествие Стамбул-Конья</p>
+												</div>
+											</div>
+										</div>
+										<div class="section-journal-slide splide__slide">
+											<div class="card-library">
+												<img class="card-library__image card-library__image--clip-bottom" src="./assets/images/content-journal-1.jpg" alt="">
+												<div class="card-library__body">
+													<h3 class="fs-large fs-italic">Искусство баланса</h3>
+													<p>Алена видео-урок «Здоровая спина»</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-journal__content js-tabs-content" data-tab-id="2">
+							<h3 class="heading-3">Июль</h3>
+
+						</div>
+
+						<div class="section-journal__content js-tabs-content" data-tab-id="3">
+							<h3 class="heading-3">Август</h3>
+						</div>
+
+						<a class="section-journal__more button hover:stroke-white" href="#">
+							<span class="button__icon">
+								<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+									<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+								</svg>
+							</span>
+							<span class="button__text">Перейти в журнал</span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Секция "Место" -->
+			<section class="section-place section">
+				<img class="section-place__decor" data-decor="1" src="./assets/images/decor-section-place-1.svg" alt="">
+				<img class="section-place__decor" data-decor="2" src="./assets/images/decor-section-place-2.svg" alt="">
+				<img class="section-place__decor" data-decor="3" src="./assets/images/decor-section-place-3.svg" alt="">
+				<div class="section-place__container container">
+					<div class="section-place__head">
+						<h2 class="heading-2">Место, куда люди <br>приходят</h2>
+					</div>
+					<div class="section-place__body">
+						<div class="section-place__grid">
+							<div class="card-expert">
+								<img class="card-expert__image" src="./assets/images/content-for-what-1.jpg" alt="">
+								<div class="card-expert__body">
+									<h3 class="card-expert__heading heading-3 clr-primary">За исцелением</h3>
+									<p>
+										С другой стороны, экономическая повестка сегодняшнего дня требует анализа
+										экономической целесообразности принимаемых решений.
+									</p>
+									<p>
+										Создание системы образования в области самопознания – интеграция  в гармоничное
+										целое различных путей, техник, традиций, наук.
+									</p>
+								</div>
+							</div>
+							<div class="card-expert">
+								<img class="card-expert__image card-expert__image--big" src="./assets/images/content-for-what-2.jpg" alt="">
+								<div class="card-expert__body">
+									<h3 class="card-expert__heading heading-3 clr-primary">За практиками</h3>
+									<p>
+										С другой стороны, экономическая повестка сегодняшнего дня требует анализа
+										экономической целесообразности принимаемых решений.
+									</p>
+									<p>
+										Создание системы образования в области самопознания – интеграция  в гармоничное
+										целое различных путей, техник, традиций, наук.
+									</p>
+								</div>
+							</div>
+							<div class="card-expert">
+								<img class="card-expert__image card-expert__image--big" src="./assets/images/content-for-what-2.jpg" alt="">
+								<div class="card-expert__body">
+									<h3 class="card-expert__heading heading-3 clr-primary">За ответами</h3>
+									<p>
+										С другой стороны, экономическая повестка сегодняшнего дня требует анализа
+										экономической целесообразности принимаемых решений.
+									</p>
+									<p>
+										Создание системы образования в области самопознания – интеграция  в гармоничное
+										целое различных путей, техник, традиций, наук.
+									</p>
+								</div>
+							</div>
+							<div class="card-expert">
+								<img class="card-expert__image" src="./assets/images/content-for-what-1.jpg" alt="">
+								<div class="card-expert__body">
+									<h3 class="card-expert__heading heading-3 clr-primary">За медитацией</h3>
+									<p>
+										С другой стороны, экономическая повестка сегодняшнего дня требует анализа
+										экономической целесообразности принимаемых решений.
+									</p>
+									<p>
+										Создание системы образования в области самопознания – интеграция  в гармоничное
+										целое различных путей, техник, традиций, наук.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Секция "Расписание" -->
+			<section class="section-schedule section" id="section-schedule">
+				<img class="section-schedule__decor" src="./assets/images/decor-section-common.svg" aria-hidden="true" alt="">
+				<img class="section-schedule__decor" src="./assets/images/decor-section-common.svg" aria-hidden="true" alt="">
+				<div class="section-schedule__container container">
+					<div class="section-schedule__head">
+						<h2 class="heading-2">Расписание на неделю</h2>
+					</div>
+					<div class="section-schedule__body">
+						<div class="schedule js-schedule">
+							<div class="schedule__header js-schedule-header">
+								<button class="schedule__button js-schedule-button-prev">←</button>
+								<h3 class="schedule__week-display js-schedule-week-display"></h3>
+								<button class="schedule__button js-schedule-button-next">→</button>
+							</div>
+							<div class="schedule__days-grid js-schedule-days-grid">
+								<p class="schedule__days-item">Пн</p>
+								<p class="schedule__days-item">Вт</p>
+								<p class="schedule__days-item">Ср</p>
+								<p class="schedule__days-item">Чт</p>
+								<p class="schedule__days-item">Пт</p>
+								<p class="schedule__days-item">Сб</p>
+								<p class="schedule__days-item">Вс</p>
+								<!-- Дневные слоты -->
+							</div>
+							<div class="schedule__events-grid js-schedule-events-grid">
+								<!-- Временные слоты -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Секция "Библиотека" -->
+			<section class="section-library section splide" data-slider-id="section-library">
+				<div class="section-library__container container">
+					<div class="section-library__head">
+						<h2 class="heading-2">Библиотека</h2>
+						<div class="section-library__desktop-navigation" id="section-library-desktop-navigation">
+							<div class="splide__arrows" id="section-library-navigation">
+								<button class="splide__arrow splide__arrow--prev" type="button">
+									<svg class="icon" width="31" height="30" viewBox="0 0 31 30" stroke="currentColor">
+										<use href="./assets/icons/icon-arrow-left.svg"></use>
+									</svg>
+								</button>
+								<div class="splide__arrow-counter">
+									<span class="splide__arrow-index">00</span>
+									<span class="splide__arrow-total">00</span>
+								</div>
+								<button class="splide__arrow splide__arrow--next" type="button">
+									<svg class="icon" width="31" height="30" viewBox="0 0 31 30" stroke="currentColor">
+										<use href="./assets/icons/icon-arrow-right.svg"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-library__body splide__track">
+						<div class="section-library__grid splide__list">
+							<div class="card-library splide__slide">
+								<img class="card-library__image card-library__image--clip-top" src="./assets/images/content-journal-1.jpg" alt="">
+								<div class="card-library__body">
+									<h2 class="heading-3 no-text-indent">Йога</h2>
+									<p>С другой стороны, экономическая повестка сегодняшнего дня требует анализа экономической целесообразности принимаемых решений. </p>
+								</div>
+							</div>
+							<div class="card-library splide__slide">
+								<img class="card-library__image card-library__image--clip-top" src="./assets/images/content-journal-1.jpg" alt="">
+								<div class="card-library__body">
+									<h2 class="heading-3 no-text-indent">Природа Ума</h2>
+									<p>С другой стороны, экономическая повестка сегодняшнего дня требует анализа экономической целесообразности принимаемых решений. </p>
+								</div>
+							</div>
+							<div class="card-library splide__slide">
+								<img class="card-library__image card-library__image--clip-top" src="./assets/images/content-journal-1.jpg" alt="">
+								<div class="card-library__body">
+									<h2 class="heading-3 no-text-indent">Созерцание</h2>
+									<p>С другой стороны, экономическая повестка сегодняшнего дня требует анализа экономической целесообразности принимаемых решений. </p>
+								</div>
+							</div>
+							<div class="card-library splide__slide">
+								<img class="card-library__image card-library__image--clip-top" src="./assets/images/content-journal-1.jpg" alt="">
+								<div class="card-library__body">
+									<h2 class="heading-3 no-text-indent">Психология</h2>
+									<p>С другой стороны, экономическая повестка сегодняшнего дня требует анализа экономической целесообразности принимаемых решений. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-library__mobile-navigation" id="section-library-mobile-navigation">
+						<!-- Контейнер навигации на мобильной версии -->
+					</div>
+				</div>
+			</section>
+
+			<!-- Секция "Мастера" -->
+			<section class="section-masters section splide" data-slider-id="section-masters">
+				<img class="section-masters__decor" src="./assets/images/decor-section-masters.svg" alt="">
+				<div class="section-masters__container container">
+					<div class="section-masters__head">
+						<h2 class="heading-2">Мастера</h2>
+						<a class="button hover:stroke-light" href="./experts.html">
+							<span class="button__icon">
+								<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+									<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+								</svg>
+							</span>
+							<span class="button__text">Смотреть всех экспертов</span>
+						</a>
+					</div>
+					<div class="section-masters__body splide__track">
+						<div class="section-masters__grid splide__list">
+							<div class="section-masters__slide splide__slide">
+								<div class="card-expert">
+									<img class="card-expert__image" src="./assets/images/content-master-1.jpg" alt="">
+									<div class="card-expert__body">
+										<h3 class="card-expert__heading heading-3">Иван Дружинин</h3>
+										<p>
+											С другой стороны, экономическая повестка сегодняшнего дня требует анализа
+											экономической целесообразности принимаемых решений.
+										</p>
+										<div class="card-expert__foot">
+											<a class="button hover:stroke-white" href="./expert.html">
+												<span class="button__icon">
+													<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+														<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+													</svg>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-masters__slide splide__slide">
+								<div class="card-expert">
+									<img class="card-expert__image card-expert__image--clip-down" src="./assets/images/content-master-1.jpg" alt="">
+									<div class="card-expert__body">
+										<h3 class="card-expert__heading heading-3">Иван Дружинин</h3>
+										<p>
+											С другой стороны, экономическая повестка сегодняшнего дня требует анализа
+											экономической целесообразности принимаемых решений.
+										</p>
+										<div class="card-expert__foot">
+											<a class="button hover:stroke-white" href="./expert.html">
+												<span class="button__icon">
+													<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+														<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+													</svg>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-masters__slide splide__slide">
+								<div class="card-expert">
+									<img class="card-expert__image" src="./assets/images/content-master-1.jpg" alt="">
+									<div class="card-expert__body">
+										<h3 class="card-expert__heading heading-3">Иван Дружинин</h3>
+										<p>
+											С другой стороны, экономическая повестка сегодняшнего дня требует анализа
+											экономической целесообразности принимаемых решений.
+										</p>
+										<div class="card-expert__foot">
+											<a class="button hover:stroke-white" href="./expert.html">
+												<span class="button__icon">
+													<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+														<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+													</svg>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-masters__slide splide__slide">
+								<div class="card-expert">
+									<img class="card-expert__image card-expert__image--clip-down" src="./assets/images/content-master-1.jpg" alt="">
+									<div class="card-expert__body">
+										<h3 class="card-expert__heading heading-3">Иван Дружинин</h3>
+										<p>
+											С другой стороны, экономическая повестка сегодняшнего дня требует анализа
+											экономической целесообразности принимаемых решений.
+										</p>
+										<div class="card-expert__foot">
+											<a class="button hover:stroke-white" href="./expert.html">
+												<span class="button__icon">
+													<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+														<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+													</svg>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Секция "Баннер" -->
+			<section class="section-banner section">
+				<img class="section-banner__decor" src="./assets/images/decor-section-banner.png" alt="">
+				<div class="section-banner__container container">
+					<div class="section-banner__body">
+						<h2 class="heading-2">Хотите к нам <br>присоединиться?</h2>
+						<div class="section-banner__text">
+							<p>С другой стороны, экономическая повестка сегодняшнего дня требует анализа экономической целесообразности принимаемых решений.</p>
+						</div>
+						<button class="section-banner__more button hover:stroke-light">
+							<span class="button__icon">
+								<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+									<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+								</svg>
+							</span>
+							<span class="button__text">Вступить в сообщество</span>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Секция "Поделитесь" -->
+			<section class="section-feedback section">
+				<img class="section-feedback__decor" src="./assets/images/decor-section-common.svg" alt="">
+				<img class="section-feedback__decor" src="./assets/images/decor-section-common.svg" alt="">
+				<div class="section-feedback__container container">
+					<div class="section-feedback__head">
+						<h2 class="heading-2">Поделитесь <br>своей историей</h2>
+					</div>
+					<div class="section-feedback__body">
+						<form class="section-feedback__form" action="#">
+							<fieldset class="section-feedback__fieldset">
+								<input class="section-feedback__input input" type="text" name="name" placeholder="Введите имя" required>
+								<input class="section-feedback__input input" type="tel" name="phone" placeholder="Введите телефон" required>
+								<input class="section-feedback__input input" type="email" name="email" placeholder="Введите почту" required>
+								<textarea class="section-feedback__textarea textarea" name="message" rows="4" placeholder="Введите сообщение" required></textarea>
+							</fieldset>
+							<button class="section-feedback__submit button hover:stroke-white" type="submit">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+									</svg>
+								</span>
+								<span class="button__text">Отправить</span>
+							</button>
+						</form>
+						<div class="section-feedback__text">
+							<span class="opacity-50">Нажимая на кнопку, вы соглашаетесь с</span> <a href="#">политикой конфиденциальности</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Секция "Отзывы" -->
+			<section class="section-reviews section splide" data-slider-id="section-reviews">
+				<img class="section-reviews__decor" src="./assets/images/decor-section-reviews.svg" alt="">
+				<div class="section-reviews__container container">
+					<div class="section-reviews__head">
+						<h2 class="heading-2">Отзывы</h2>
+						<div class="section-reviews__desktop-navigation" id="section-reviews-desktop-navigation">
+							<div class="splide__arrows" id="section-reviews-navigation">
+								<button class="splide__arrow splide__arrow--prev" type="button">
+									<svg class="icon" width="31" height="30" viewBox="0 0 31 30" stroke="currentColor">
+										<use href="./assets/icons/icon-arrow-left.svg"></use>
+									</svg>
+								</button>
+								<div class="splide__arrow-counter">
+									<span class="splide__arrow-index">00</span>
+									<span class="splide__arrow-total">00</span>
+								</div>
+								<button class="splide__arrow splide__arrow--next" type="button">
+									<svg class="icon" width="31" height="30" viewBox="0 0 31 30" stroke="currentColor">
+										<use href="./assets/icons/icon-arrow-right.svg"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="section-reviews__body splide__track">
+						<div class="section-reviews__grid splide__list">
+							<div class="section-reviews__slide splide__slide">
+								<div class="card-review">
+									<div class="card-review__head">
+										<img class="card-review__avatar" src="./assets/images/content-avatar-1.jpg" alt="Фотография" />
+										<span class="card-review__name heading-3">Мария</span>
+									</div>
+									<div class="card-review__body">
+										<img class="card-review__icon" src="./assets/images/icon-play.svg" alt="" aria-hidden="true">
+										<div class="card-review__text">
+											<p>«С другой стороны, экономическая повестка сегодняшнего дня требует анализа экономической целесообразности принимаемых решений».</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-reviews__slide splide__slide">
+								<div class="card-review">
+									<div class="card-review__head">
+										<img class="card-review__avatar" src="./assets/images/content-avatar-1.jpg" alt="Фотография" />
+										<span class="card-review__name heading-3">Мария</span>
+									</div>
+									<div class="card-review__body">
+										<img class="card-review__icon" src="./assets/images/icon-play.svg" alt="" aria-hidden="true">
+										<div class="card-review__text">
+											<p>«С другой стороны, экономическая повестка сегодняшнего дня требует анализа экономической целесообразности принимаемых решений».</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-reviews__slide splide__slide">
+								<div class="card-review">
+									<div class="card-review__head">
+										<img class="card-review__avatar" src="./assets/images/content-avatar-1.jpg" alt="Фотография" />
+										<span class="card-review__name heading-3">Мария</span>
+									</div>
+									<div class="card-review__body">
+										<img class="card-review__icon" src="./assets/images/icon-play.svg" alt="" aria-hidden="true">
+										<div class="card-review__text">
+											<p>«С другой стороны, экономическая повестка сегодняшнего дня требует анализа экономической целесообразности принимаемых решений».</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-reviews__slide splide__slide">
+								<div class="card-review">
+									<div class="card-review__head">
+										<img class="card-review__avatar" src="./assets/images/content-avatar-1.jpg" alt="Фотография" />
+										<span class="card-review__name heading-3">Мария</span>
+									</div>
+									<div class="card-review__body">
+										<img class="card-review__icon" src="./assets/images/icon-play.svg" alt="" aria-hidden="true">
+										<div class="card-review__text">
+											<p>«С другой стороны, экономическая повестка сегодняшнего дня требует анализа экономической целесообразности принимаемых решений».</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section-reviews__mobile-navigation" id="section-reviews-mobile-navigation">
+							<!-- Контейнер для мобильной навигации -->
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__body">
+					<div class="footer__logo">
+						<a class="footer__logo-link" href="./">
+							<span class="logo">Лого</span>
+						</a>
+					</div>
+					<nav class="footer__menu">
+						<ul class="footer__menu-list">
+							<li><a class="footer__menu-link" href="./about.html">О проекте</a></li>
+							<li><a class="footer__menu-link" href="./tariffs.html">Тарифы</a></li>
+							<li><a class="footer__menu-link" href="./experts.html">Мастера</a></li>
+							<li><a class="footer__menu-link" href="./library.html">Библиотека</a></li>
+							<li><a class="footer__menu-link" href="./index.html#section-schedule">Расписание</a></li>
+							<li><a class="footer__menu-link" href="./journal.html">Журнал</a></li>
+						</ul>
+						<div class="footer__menu-foot">
+							<button class="footer__menu-button button clr-white hover:stroke-dark js-background-sound-trigger">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-volume.svg"></use>
+									</svg>
+								</span>
+							</button>
+							<a class="footer__menu-button button clr-white hover:stroke-dark" href="#">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-user.svg"></use>
+									</svg>
+								</span>
+								<span class="button__text">Личный кабинет</span>
+							</a>
+						</div>
+					</nav>
+				</div>
+				<div class="footer__foot">
+					<div class="footer__text">
+						<p>Copyright 2024 KT. All rights reserved.</p>
+					</div>
+					<div class="footer__links">
+						<a class="footer__link footer__link--opacity-50" href="./policy.html">Политика конфиденциальности</a>
+						<a class="footer__link footer__link--opacity-50" href="./policy.html">Согласие на обработку данных</a>
+						<a class="footer__link" href="#">Made by GoWeb.Pro</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="js-background-sound" data-sound-url="./assets/audio/sound.wav"></div>
+</body>
+
+</html>

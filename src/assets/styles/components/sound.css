@@ -1,0 +1,66 @@
+.sound {
+	display: flex;
+	align-items: center;
+	gap: var(--space-20);
+	background: var(--clr-primary-100);
+	padding: var(--space-20);
+	clip-path: polygon(3.175rem 0%, 100% 0, 100% 100%, 0 100%, 0 3.175rem);
+}
+
+.sound__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 6.25rem;
+	height: 6.25rem;
+	border: none;
+	padding: 0;
+	border-radius: 50%;
+	background-color: var(--clr-primary-400);
+	transition: all var(--transition-ease-sm) 0s;
+	cursor: pointer;
+}
+
+.sound__button:active {
+	transform: scale(0.9);
+}
+
+.sound__button-icon {
+	display: none;
+	width: 2.25rem;
+	height: 2.25rem;
+	fill: var(--clr-neutral-100);
+}
+
+.sound__button.is-paused .sound__button-icon--play,
+.sound__button.is-playing .sound__button-icon--pause {
+	display: block;
+}
+
+.sound__container {
+	flex: 1 1 auto;
+}
+
+.sound__time {
+	display: flex;
+	align-items: center;
+	gap: var(--space-10);
+	margin-top: var(--space-10);
+}
+
+.sound__time-icon {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+@media screen and (width < 48em) {
+	.sound {
+		align-items: flex-start;
+		clip-path: none;
+	}
+
+	.sound__button {
+		width: 3.75rem;
+		height: 3.75rem;
+	}
+}

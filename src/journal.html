@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<!-- Page options -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="width">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- Page information -->
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<title>Журнал FreeDom</title>
+
+	<!-- Page favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+	<link rel="manifest" href="./site.webmanifest">
+
+	<!-- Page styles -->
+	<link rel="stylesheet" href="./assets/styles/main.css">
+
+	<!-- Page scripts -->
+	<script type="module" src="./assets/scripts/main.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header js-site-header">
+			<div class="header__container container">
+				<div class="header__logo">
+					<a class="header__logo-link" href="./">
+						<span class="logo">Лого</span>
+					</a>
+				</div>
+				<nav class="header__menu">
+					<button class="header__menu-burger burger js-site-navbar-button" data-menu-action="open">
+						<span class="burger__text">Меню</span>
+						<span class="burger__icon">
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+					<div class="header__menu-body">
+						<ul class="header__menu-list">
+							<li><a class="header__menu-link" href="./about.html">О проекте</a></li>
+							<li><a class="header__menu-link" href="./tariffs.html">Тарифы</a></li>
+							<li><a class="header__menu-link" href="./experts.html">Мастера</a></li>
+							<li><a class="header__menu-link" href="./library.html">Библиотека</a></li>
+							<li><a class="header__menu-link" href="./index.html#section-schedule">Расписание</a></li>
+							<li><a class="header__menu-link" href="./journal.html">Журнал</a></li>
+						</ul>
+						<div class="header__menu-foot">
+							<button class="header__menu-button button hover:stroke-white js-background-sound-trigger">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-volume.svg"></use>
+									</svg>
+								</span>
+							</button>
+							<a class="header__menu-button button hover:stroke-white" href="#">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-user.svg"></use>
+									</svg>
+								</span>
+								<span class="button__text">Личный кабинет</span>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div class="navbar js-site-navbar">
+			<div class="navbar__container container">
+				<div class="navbar__head">
+					<div class="navbar__logo">
+						<a class="navbar__logo-link" href="./">
+							<span class="logo">Лого</span>
+						</a>
+					</div>
+					<div class="navbar__body">
+						<button class="navbar__body-burger burger js-site-navbar-button" data-menu-action="close">
+							<span class="burger__text">Меню</span>
+							<span class="burger__icon">
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+						<div class="navbar__body-foot">
+							<button class="navbar__body-button button clr-white hover:stroke-primary js-background-sound-trigger">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-volume.svg"></use>
+									</svg>
+								</span>
+							</button>
+							<a class="navbar__body-button button clr-white hover:stroke-primary" href="#">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-user.svg"></use>
+									</svg>
+								</span>
+								<span class="button__text">Личный кабинет</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<nav class="navbar__menu">
+					<ul class="navbar__menu-list">
+						<li><a class="navbar__menu-link" href="./about.html">О проекте</a></li>
+						<li><a class="navbar__menu-link" href="./tariffs.html">Тарифы</a></li>
+						<li><a class="navbar__menu-link" href="./experts.html">Мастера</a></li>
+						<li><a class="navbar__menu-link" href="./library.html">Библиотека</a></li>
+						<li><a class="navbar__menu-link" href="./index.html#section-schedule">Расписание</a></li>
+						<li><a class="navbar__menu-link" href="./journal.html">Журнал</a></li>
+					</ul>
+					<div class="navbar__menu-foot">
+						<button class="navbar__menu-button button clr-white hover:stroke-primary js-background-sound-trigger">
+							<span class="button__icon">
+								<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+									<use href="./assets/icons/icon-volume.svg"></use>
+								</svg>
+							</span>
+						</button>
+						<a class="navbar__menu-button button clr-white hover:stroke-primary" href="#">
+							<span class="button__icon">
+								<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+									<use href="./assets/icons/icon-user.svg"></use>
+								</svg>
+							</span>
+							<span class="button__text">Личный кабинет</span>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<main class="main">
+			<div class="section-page section">
+				<div class="section-page__decor">
+					<img class="section-page__decor-item" src="./assets/images/decor-section-common.svg" alt="">
+					<img class="section-page__decor-item" src="./assets/images/decor-section-common.svg" alt="">
+				</div>
+				<div class="section-page__container container">
+					<ul class="section-page__breadcrumbs">
+						<li class="section-page__breadcrumbs-item">
+							<a class="section-page__breadcrumbs-link" href="/">Главная</a>
+							<svg class="section-page__breadcrumbs-icon" width="20" height="20" viewBox="0 0 20 20" stroke="currentColor">
+								<use href="./assets/icons/icon-arrow-right.svg"></use>
+							</svg>
+						</li>
+						<li class="section-page__breadcrumbs-item">
+							<span class="section-page__breadcrumbs-text">Журнал FreeDom</span>
+						</li>
+					</ul>
+
+					<div class="section-page__head">
+						<h1 class="heading-1 no-text-indent">Журнал FreeDom</h1>
+
+						<div class="filter" action="#" tabindex="0">
+							<span class="filter__label">Фильтр по времени:</span>
+							<button class="filter__value fs-italic" type="button">Июль 2024</button>
+							<ul class="filter__list">
+								<li><button class="filter__item is-current">Июль 2024</button></li>
+								<li><button class="filter__item">Август 2024</button></li>
+								<li><button class="filter__item">Сентябрь 2024</button></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="section-page__info">
+						<span class="opacity-50">Про жизнь</span>
+						<span class="date">
+							<svg class="date__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+								<use href="./assets/icons/icon-calendar.svg"></use>
+							</svg>
+							<span class="date__text">9 июля в 0:03</span>
+						</span>
+					</div>
+
+					<div class="section-page__body">
+						<aside class="section-page__sidebar js-site-sidebar">
+							<div class="contents">
+								<h2 class="contents__heading fs-large">В этом выпуске вас ждет:</h2>
+								<ul class="contents__list">
+									<li><a class="contents__link" href="#anchor-1">Зов сердца, Виктория Белокобыльская</a></li>
+									<li><a class="contents__link" href="#anchor-2">Утренняя практика в традиции Кундалини йоги с Сат Ардас Каур</a></li>
+									<li><a class="contents__link" href="#anchor-3">Знакомство с традицией Кундалини йоги и Надеждой Коровайной (Сат Ардас Каур)</a></li>
+									<li><a class="contents__link" href="#anchor-4">Здоровая спина, йога-практика с Аленой Дягилевой</a></li>
+								</ul>
+							</div>
+						</aside>
+						<div class="section-page__content">
+							<img class="section-page__content-image" src="./assets/images/content-journal-hero.jpg" alt="">
+
+							<article class="section-page__article">
+								<h2 class="heading-3" id="anchor-1">Зов сердца, Виктория Белокобыльская</h2>
+
+								<div><a href="#">@vbelokobylskaya</a></div>
+
+								<p>
+									Я убеждена в том, что все хорошие и добрые дела, как мы обычно это понимаем, делаются сами собой, без внутренних усилий и рационального подхода.
+									Они могут требовать много времени, сил и вложений, но все это естественно, без насилия над собой и в потоке своей жизни.
+								</p>
+
+								<p>
+									<strong>Я - художник и, естественно,</strong> где бы я ни была, я смотрю на все через возможности и призму того, что нам дает искусство. Я
+									всегда его средствами через свои работы или через знакомство с искусством меняю мир, надеюсь, хоть немного в лучшую сторону.
+								</p>
+
+								<p>И это мой зов сердца.</p>
+
+								<p>
+									В деревне, где находится наша артрезиденция - большая территория под открытым небом, где мы проводим выставки современного искусства, есть
+									школа.
+									<strong>Она очень скромная, если не сказать даже бедная</strong>, в ней чуть больше 100 учеников. Я давно наблюдала за детьми, которые там
+									учатся и понимала, что им недостает тех же возможностей, что и городским детям. Они уже только по месту своего рождения, в этой деревне, лишены
+									культурной части, которая совершенно естественно есть у детей в городе: события, праздники, выставки и тп.
+								</p>
+
+								<p>
+									Я решила провести в школе встречу-беседу, где бы я показала им настоящие картины и объекты советских и современных художников, рассказала бы им
+									о
+									себе, и , возможно, вдохновила кого-то из детей на творчество, желание изучать искусство и помогла поверить в свои силы.
+								</p>
+
+								<p>
+									<strong>Так и сделала: привезли картины, настроили экран, приехало телевидение, поскольку СМИ понимали</strong>, что это событие необычное: в
+									сельской школе, в глуши выступает современный популярный художник, показывает картины и рассказывает как их понимать.м
+								</p>
+
+								<p>
+									Это было самое волнительное для меня мероприятие, так как это была совсем неподготовленная аудитория по сравнению с той, к которой я привыкла -
+									коллекционеры, любители искусства или мои друзья, которые знают и любят современное искусство. <strong>Это были дети и жители села. Какая будет
+										реакция? Ведь даже в городе не все принимают какие- то новые и непривычные вещи.</strong>
+								</p>
+
+								<p>
+									Как все слушали! Как все смотрели и были в процессе лекции и показа! И когда дошла очередь до современных объектов дети первые вскочили с мест и
+									подошли ближе, чтобы рассмотреть. <strong>Рассуждали, удивлялись, давали комментарии,</strong> но с таким искренним интересом и только в
+									положительном ключе. Взрослые тоже показали свое принятие и понимание.
+								</p>
+
+								<p>
+									На самом деле, особой работы для детей у меня не было, но мы ее придумали. Пришли 10 детей и красили - обновляли мольберты для экспозиции.
+									После, чтобы еще больше вовлечь их в процесс и дать почувствовать свою нужность, я предложила им немного порисовать и сделать из их рисунков
+									инсталляцию по теме проекта. И так они стали даже участниками выставки. <strong>Они мне не верили, что я размещу их работы</strong> на настоящей
+									выставке, куда приедут люди из города и телевидение.
+								</p>
+
+								<p>
+									Я снова сказала, что не смогу без их помощи провести уже открытие выставки, так как нужно встречать гостей, предлагать им напитки, объяснять,
+									что и где на территории. <strong>Дети, снова решили помогать!</strong>
+								</p>
+
+								<p>
+									В день открытия они пришли в своих фирменных майках, распределили обязанности и были очень ответственными и милыми. Они смотрели искусство и
+									были частью современного мира, который для всех должен быть доступен не зависимо от того, где ты живешь. <strong>Я внесла свой небольшой вклад в
+										эту идею.</strong> И мы с Зовом сердца теперь будем продолжать создавать, узнавать, помогать и развиваться.
+								</p>
+
+								<div class="grid-image">
+									<img src="./assets/images/content-fact-1.jpg" alt="">
+									<img src="./assets/images/content-fact-1.jpg" alt="">
+									<img src="./assets/images/content-fact-1.jpg" alt="">
+									<img src="./assets/images/content-fact-1.jpg" alt="">
+									<img src="./assets/images/content-fact-1.jpg" alt="">
+									<img src="./assets/images/content-fact-1.jpg" alt="">
+								</div>
+
+								<a class="button hover:stroke-white" href="#">
+									<span class="button__icon">
+										<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+											<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+										</svg>
+									</span>
+									<span class="button__text">Другие материалы по теме Йоги</span>
+								</a>
+							</article>
+
+							<article class="section-page__article">
+								<h2 class="heading-3" id="anchor-2">Утренняя практика в традиции Кундалини йоги с Сат Ардас Каур</h2>
+
+								<p>Как вы обычно начинаете утро? </p>
+
+								<p>Кто-то (не будем признаваться кто) с чашки кофе и интернет-серфа. А Надежда Сат Ардас Каур сама расскажет и покажет свое УТРО:</p>
+
+								<q class="quote">
+									«Утренняя Садхана - это потребность души. Мы уже от природы божественны, мы Духовная Сущность Света! Необходимо освобождаться от мусора и сиять
+									как можно ярче! Поток мыслей перегружает ум, мусор переполняет бессознательное. Но Ум может быть и другом.
+								</q>
+
+								<q class="quote">
+									Один из наиболее эффективных способов очищения коридоров подсознательного ума - это садхана, ежедневная практика медитации (с использованием
+									мантр).»
+								</q>
+
+								<video controls muted preload="auto" plays-inline width="100%">
+									<source src="https://www.youtube.com/watch?v=SZqJHndPw2M" type="video/mp4">
+								</video>
+
+								<a class="button hover:stroke-white" href="#">
+									<span class="button__icon">
+										<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+											<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+										</svg>
+									</span>
+									<span class="button__text">Другие материалы по теме Йоги</span>
+								</a>
+							</article>
+
+							<article class="section-page__article">
+								<h2 class="heading-3" id="anchor-3">Знакомство с традицией Кундалини йоги и Надеждой Коровайной (Сат Ардас Каур)</h2>
+
+								<p>
+									А заодно расскажет о себе и Кундилини Йоге:
+								</p>
+
+								<p>
+									Белые одежды, ледяные купания, 4-х утренние подьемы, спрятанные в тюрбан волосы, мантры на разные случаи жизни и медитации похожие на
+									гимнастику… необычный вид само<span style="text-decoration: line-through;">истезания</span>познания.😇
+								</p>
+
+								<p>
+									Надежда Коровайная (Сат Ардас Каур, переводится как истинная молитва).
+								</p>
+
+								<p>
+									Преподаватель Кундалини йоги, организотор семинаров Кундалини Йоги и Сат Нам Расаян.
+								</p>
+
+								<p><a href="#">https://www.instagram.com/sat_nam_rasayan_ru?igsh=MW5zaWthZnE5eTJ2aw==</a></p>
+
+								<p><a href="#">www.sat-nam-rasayan.ru</a></p>
+
+								<p><a href="#">@satnamrasayan_russia</a></p>
+
+								<p><a href="#">@life_in_balance_snr</a></p>
+
+								<video controls muted preload="auto" plays-inline width="100%">
+									<source src="https://www.youtube.com/watch?v=SZqJHndPw2M" type="video/mp4">
+								</video>
+
+								<a class="button hover:stroke-white" href="#">
+									<span class="button__icon">
+										<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+											<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+										</svg>
+									</span>
+									<span class="button__text">Другие материалы по теме Йоги</span>
+								</a>
+							</article>
+
+							<article class="section-page__article">
+								<h2 class="heading-3" id="anchor-4">Здоровая спина, йога-практика с Аленой Дягилевой</h2>
+
+								<p>Здоровая спина, просто здоровая спина, никакой экзотики.</p>
+
+								<p>Алена Дягилева, как человек практичный и хорошо разбирающийся в своем йога-деле, сразу же к этому делу и переходит. 💪</p>
+
+								<p>Немного слов все же будет:</p>
+
+								<q class="quote">
+									Меня зовут Алена Дягилева. Я сертифицированный преподаватель Хатха йоги, Йогатерапевт, Тренер Умного фитнеса, а также специалист по Аюрведе и
+									интегративной нутрициологии.
+								</q>
+
+								<q class="quote">
+									Я преподаю йогу 7 лет. Для меня йога – это любовь с первого взгляда, с первого движения, с первой асаны. Для меня главная ценность йоги
+									заключается в том, что она открывает двери в мир самосовершенствования на всех планах: физическом, психическом, духовном и ментальном.
+								</q>
+
+								<q class="quote">
+									Как йогатерапевт, я помогаю людям улучшить осанку, восстановить женское здоровье ( восстановление после родов, диастаз, опущение органов малого
+									таза), помогаю поддержать здоровье при любых патологических состояниях здоровья с помощью йогических практик.
+								</q>
+
+								<q class="quote">
+									Как специалист по Аюрведе и интегративной нутрициологии, и провожу полную диагностику здоровья, помогаю выявить и закрыть дефицитные состояния,
+									подобрать индивидуальный рацион питания и вид физической деятельности.
+								</q>
+
+								<h3>Здоровая спина</h3>
+
+								<p>
+									Это занятие подойдет тем, у кого сидячая и малоподвижная работа, а также тем, кому приходится проводить много времени на ногах, если вы
+									испытываете чувство напряжения в шее и спине, или имеются нарушения осанки, такие как сутулость, гиперлордоз, беспокоят головные боли, имеются
+									ухудшения концентрации, памяти, есть бессонница, напряжение и усталость.
+								</p>
+
+								<a class="button hover:stroke-white" href="#">
+									<span class="button__icon">
+										<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+											<use href="./assets/icons/icon-arrow-up-right.svg"></use>
+										</svg>
+									</span>
+									<span class="button__text">Другие материалы по теме Йоги</span>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__body">
+					<div class="footer__logo">
+						<a class="footer__logo-link" href="./">
+							<span class="logo">Лого</span>
+						</a>
+					</div>
+					<nav class="footer__menu">
+						<ul class="footer__menu-list">
+							<li><a class="footer__menu-link" href="./about.html">О проекте</a></li>
+							<li><a class="footer__menu-link" href="./tariffs.html">Тарифы</a></li>
+							<li><a class="footer__menu-link" href="./experts.html">Мастера</a></li>
+							<li><a class="footer__menu-link" href="./library.html">Библиотека</a></li>
+							<li><a class="footer__menu-link" href="./index.html#section-schedule">Расписание</a></li>
+							<li><a class="footer__menu-link" href="./journal.html">Журнал</a></li>
+						</ul>
+						<div class="footer__menu-foot">
+							<button class="footer__menu-button button clr-white hover:stroke-dark js-background-sound-trigger">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-volume.svg"></use>
+									</svg>
+								</span>
+							</button>
+							<a class="footer__menu-button button clr-white hover:stroke-dark" href="#">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-user.svg"></use>
+									</svg>
+								</span>
+								<span class="button__text">Личный кабинет</span>
+							</a>
+						</div>
+					</nav>
+				</div>
+				<div class="footer__foot">
+					<div class="footer__text">
+						<p>Copyright 2024 KT. All rights reserved.</p>
+					</div>
+					<div class="footer__links">
+						<a class="footer__link footer__link--opacity-50" href="./policy.html">Политика конфиденциальности</a>
+						<a class="footer__link footer__link--opacity-50" href="./policy.html">Согласие на обработку данных</a>
+						<a class="footer__link" href="#">Made by GoWeb.Pro</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="js-background-sound" data-sound-url="./assets/audio/sound.wav"></div>
+</body>
+
+</html>

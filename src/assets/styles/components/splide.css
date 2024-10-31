@@ -1,0 +1,70 @@
+/* Component: Splide */
+
+.splide__arrows {
+	display: flex;
+	align-items: center;
+	gap: var(--space-10);
+}
+
+.splide__arrow {
+	position: static;
+	width: 1.872rem;
+	height: 1.875rem;
+	margin: 0;
+	border: none;
+	border-radius: 50%;
+	padding: 0;
+	background: none;
+	color: currentColor;
+	cursor: pointer;
+	transition: all var(--transition-ease-sm);
+}
+
+.splide__arrow:hover {
+	color: var(--clr-primary-400);
+}
+
+.splide__arrow:active {
+	transform: scale(0.95);
+}
+
+.splide__arrow-counter {
+	display: flex;
+	align-items: center;
+	font-family: var(--ff-primary);
+	line-height: 1.125;
+}
+
+.splide__arrow-index {
+	font-size: var(--fs-heading-lg);
+}
+
+.splide__arrow-index::after {
+	content: "/";
+	margin-inline: 0.125em;
+}
+
+.splide__arrow-total {
+	font-size: var(--fs-heading-md);
+	opacity: 0.5;
+}
+
+@media screen and (width < 80em) {
+	.splide__arrow-index {
+		font-size: var(--fs-heading-md);
+	}
+
+	.splide__arrow-total {
+		font-size: var(--fs-heading-md);
+	}
+}
+
+@media screen and (width < 48em) {
+	.splide__arrow-index {
+		font-size: var(--fs-heading-sm);
+	}
+
+	.splide__arrow-total {
+		font-size: var(--fs-heading-sm);
+	}
+}

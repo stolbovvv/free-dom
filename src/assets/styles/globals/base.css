@@ -1,0 +1,69 @@
+/* Base styles */
+/* stylelint-disable declaration-no-important */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--clr-neutral-100);
+	font-size: var(--fs-body-md);
+	font-family: var(--ff-body);
+	font-weight: 400;
+	line-height: var(--lh-body);
+	color: var(--clr-neutral-900);
+}
+
+@media screen and (width < 80em) {
+	body {
+		font-size: var(--fs-body-sm);
+	}
+}
+
+@media screen and (width < 48em) {
+	body {
+		font-size: var(--fs-body-xs);
+	}
+}
+
+:where(a:not([class])) {
+	color: currentColor;
+}
+
+:where(a:not([class])):hover {
+	color: var(--clr-primary-400);
+}
+
+p {
+	text-indent: 0.5em;
+}
+
+img,
+svg,
+video,
+picture {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+	font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

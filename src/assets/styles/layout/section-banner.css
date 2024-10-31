@@ -1,0 +1,42 @@
+/* Layout: Section Banner */
+
+.section-banner {
+	position: relative;
+	overflow: hidden;
+	background: var(--clr-primary-100);
+}
+
+.section-banner__decor {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+	opacity: 0.75;
+}
+
+.section-banner__container {
+	display: flex;
+}
+
+.section-banner__body {
+	flex: 0 0 auto;
+	width: 55%;
+}
+
+.section-banner__text {
+	margin-top: var(--space-40);
+}
+
+.section-banner__more {
+	margin-top: var(--space-40);
+}
+
+@media screen and (width < 48em) {
+	.section-banner__decor,
+	.section-banner__body {
+		width: 100%;
+	}
+}

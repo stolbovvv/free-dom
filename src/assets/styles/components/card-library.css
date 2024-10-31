@@ -1,0 +1,55 @@
+/* Component: Card Library */
+
+.card-library {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-library__image {
+	flex: 0 1 auto;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	aspect-ratio: 22.88 / 17;
+}
+
+.card-library__image--clip-top {
+	clip-path: polygon(6.25rem 0%, 100% 0, 100% 100%, 0 100%, 0 6.25rem);
+}
+
+.card-library__image--clip-bottom {
+	clip-path: polygon(100% 0, 100% calc(100% - 6.25rem), calc(100% - 6.25rem) 100%, 0 100%, 0 0);
+}
+
+.card-library__head {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-top: var(--space-20);
+	gap: var(--space-10);
+}
+
+.card-library__head > * {
+	margin-top: 0;
+}
+
+.card-library__head > a.button {
+	flex: 0 0 auto;
+}
+
+.card-library__body > * {
+	margin-block: 0.875em 0;
+	text-indent: 0;
+}
+
+.card-library__heading {
+	margin: 1em 0 0;
+	font-weight: 300;
+}
+
+@media screen and (width < 80em) {
+	.card-library__image--clip-top,
+	.card-library__image--clip-bottom {
+		clip-path: none;
+	}
+}

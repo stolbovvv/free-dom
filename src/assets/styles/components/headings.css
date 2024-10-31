@@ -1,0 +1,80 @@
+/* Components: Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-1,
+.heading-2,
+.heading-3 {
+	font-weight: 300;
+	line-height: var(--lh-heading);
+	text-wrap: balance;
+	word-break: break-word;
+}
+
+.heading-1,
+.heading-2,
+.heading-3 {
+	font-family: var(--ff-primary);
+	margin: 0;
+}
+
+.heading-1 {
+	font-size: var(--fs-heading-5xl);
+	text-indent: 0.5em;
+}
+
+.heading-2 {
+	font-size: var(--fs-heading-4xl);
+	text-indent: 0.5em;
+}
+
+.heading-3 {
+	font-size: var(--fs-heading-lg);
+}
+
+@media screen and (width < 100em) {
+	.heading-1 {
+		font-size: var(--fs-heading-3xl);
+	}
+
+	.heading-2 {
+		font-size: var(--fs-heading-2xl);
+	}
+
+	.heading-3 {
+		font-size: var(--fs-heading-md);
+	}
+}
+
+@media screen and (width < 80em) {
+	.heading-1 {
+		font-size: var(--fs-heading-lg);
+	}
+
+	.heading-2 {
+		font-size: var(--fs-heading-md);
+	}
+
+	.heading-3 {
+		font-size: var(--fs-heading-sm);
+	}
+}
+
+@media screen and (width < 48em) {
+	.heading-1,
+	.heading-2 {
+		text-indent: 0;
+	}
+
+	.heading-2 {
+		font-size: var(--fs-heading-sm);
+	}
+
+	.heading-3 {
+		font-size: var(--fs-heading-xs);
+	}
+}

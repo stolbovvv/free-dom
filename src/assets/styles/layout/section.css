@@ -1,0 +1,22 @@
+/* Layout: Section */
+
+.section {
+	padding-block: 6.25rem;
+}
+
+.section--no-padding-bottom {
+	/* stylelint-disable-next-line declaration-no-important */
+	padding-bottom: 0 !important;
+}
+
+@media screen and (width < 100em) {
+	.section {
+		padding-block: 6.25rem;
+	}
+}
+
+@media screen and (width < 80em) {
+	.section {
+		padding-block: 3.175rem;
+	}
+}

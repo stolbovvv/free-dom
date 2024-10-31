@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<!-- Page options -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="width">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- Page information -->
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<title>Аштанга-йога: восемь ступеней йоги по Патанджали</title>
+
+	<!-- Page favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+	<link rel="manifest" href="./site.webmanifest">
+
+	<!-- Page styles -->
+	<link rel="stylesheet" href="./assets/styles/main.css">
+
+	<!-- Page scripts -->
+	<script type="module" src="./assets/scripts/main.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header js-site-header">
+			<div class="header__container container">
+				<div class="header__logo">
+					<a class="header__logo-link" href="./">
+						<span class="logo">Лого</span>
+					</a>
+				</div>
+				<nav class="header__menu">
+					<button class="header__menu-burger burger js-site-navbar-button" data-menu-action="open">
+						<span class="burger__text">Меню</span>
+						<span class="burger__icon">
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+					<div class="header__menu-body">
+						<ul class="header__menu-list">
+							<li><a class="header__menu-link" href="./about.html">О проекте</a></li>
+							<li><a class="header__menu-link" href="./tariffs.html">Тарифы</a></li>
+							<li><a class="header__menu-link" href="./experts.html">Мастера</a></li>
+							<li><a class="header__menu-link" href="./library.html">Библиотека</a></li>
+							<li><a class="header__menu-link" href="./index.html#section-schedule">Расписание</a></li>
+							<li><a class="header__menu-link" href="./journal.html">Журнал</a></li>
+						</ul>
+						<div class="header__menu-foot">
+							<button class="header__menu-button button hover:stroke-white js-background-sound-trigger">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-volume.svg"></use>
+									</svg>
+								</span>
+							</button>
+							<a class="header__menu-button button hover:stroke-white" href="#">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-user.svg"></use>
+									</svg>
+								</span>
+								<span class="button__text">Личный кабинет</span>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div class="navbar js-site-navbar">
+			<div class="navbar__container container">
+				<div class="navbar__head">
+					<div class="navbar__logo">
+						<a class="navbar__logo-link" href="./">
+							<span class="logo">Лого</span>
+						</a>
+					</div>
+					<div class="navbar__body">
+						<button class="navbar__body-burger burger js-site-navbar-button" data-menu-action="close">
+							<span class="burger__text">Меню</span>
+							<span class="burger__icon">
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+						<div class="navbar__body-foot">
+							<button class="navbar__body-button button clr-white hover:stroke-primary js-background-sound-trigger">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-volume.svg"></use>
+									</svg>
+								</span>
+							</button>
+							<a class="navbar__body-button button clr-white hover:stroke-primary" href="#">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-user.svg"></use>
+									</svg>
+								</span>
+								<span class="button__text">Личный кабинет</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<nav class="navbar__menu">
+					<ul class="navbar__menu-list">
+						<li><a class="navbar__menu-link" href="./about.html">О проекте</a></li>
+						<li><a class="navbar__menu-link" href="./tariffs.html">Тарифы</a></li>
+						<li><a class="navbar__menu-link" href="./experts.html">Мастера</a></li>
+						<li><a class="navbar__menu-link" href="./library.html">Библиотека</a></li>
+						<li><a class="navbar__menu-link" href="./index.html#section-schedule">Расписание</a></li>
+						<li><a class="navbar__menu-link" href="./journal.html">Журнал</a></li>
+					</ul>
+					<div class="navbar__menu-foot">
+						<button class="navbar__menu-button button clr-white hover:stroke-primary js-background-sound-trigger">
+							<span class="button__icon">
+								<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+									<use href="./assets/icons/icon-volume.svg"></use>
+								</svg>
+							</span>
+						</button>
+						<a class="navbar__menu-button button clr-white hover:stroke-primary" href="#">
+							<span class="button__icon">
+								<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+									<use href="./assets/icons/icon-user.svg"></use>
+								</svg>
+							</span>
+							<span class="button__text">Личный кабинет</span>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<main class="main">
+			<div class="section-page section">
+				<div class="section-page__decor">
+					<img class="section-page__decor-item" src="./assets/images/decor-section-common.svg" alt="">
+					<img class="section-page__decor-item" src="./assets/images/decor-section-common.svg" alt="">
+				</div>
+				<div class="section-page__container container">
+					<ul class="section-page__breadcrumbs">
+						<li class="section-page__breadcrumbs-item">
+							<a class="section-page__breadcrumbs-link" href="/">Главная</a>
+							<svg class="section-page__breadcrumbs-icon" width="20" height="20" viewBox="0 0 20 20" stroke="currentColor">
+								<use href="./assets/icons/icon-arrow-right.svg"></use>
+							</svg>
+						</li>
+						<li class="section-page__breadcrumbs-item">
+							<a class="section-page__breadcrumbs-link" href="/">Библиотека</a>
+							<svg class="section-page__breadcrumbs-icon" width="20" height="20" viewBox="0 0 20 20" stroke="currentColor">
+								<use href="./assets/icons/icon-arrow-right.svg"></use>
+							</svg>
+						</li>
+						<li class="section-page__breadcrumbs-item">
+							<a class="section-page__breadcrumbs-link" href="/">Йога</a>
+							<svg class="section-page__breadcrumbs-icon" width="20" height="20" viewBox="0 0 20 20" stroke="currentColor">
+								<use href="./assets/icons/icon-arrow-right.svg"></use>
+							</svg>
+						</li>
+						<li class="section-page__breadcrumbs-item">
+							<a class="section-page__breadcrumbs-link" href="/">Основы йоги</a>
+							<svg class="section-page__breadcrumbs-icon" width="20" height="20" viewBox="0 0 20 20" stroke="currentColor">
+								<use href="./assets/icons/icon-arrow-right.svg"></use>
+							</svg>
+						</li>
+						<li class="section-page__breadcrumbs-item">
+							<span class="section-page__breadcrumbs-text">Аштанга-йога: восемь ступеней йоги по Патанджали</span>
+						</li>
+					</ul>
+
+					<div class="section-page__head">
+						<h1 class="heading-1 no-text-indent">Аштанга-йога: восемь ступеней йоги по Патанджали</h1>
+					</div>
+
+					<div class="section-page__info"></div>
+
+					<div class="section-page__body">
+						<aside class="section-page__sidebar js-site-sidebar">
+							<form class="search">
+								<input class="search__input input" type="search" placeholder="Поиск по разделу">
+								<button class="search__button" type="submit">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-search.svg"></use>
+									</svg>
+								</button>
+							</form>
+							<div class="chapters">
+								<h2 class="chapters__heading no-text-indent fs-large">Темы</h2>
+								<ul class="chapters__list">
+									<li><a class="chapters__link" href="./chapter.html">Новые статьи</a></li>
+									<li><a class="chapters__link" href="./chapter.html">Реинкарнация</a></li>
+									<li><a class="chapters__link is-current" href="./chapter.html">Основы йоги</a></li>
+									<li><a class="chapters__link" href="./chapter.html">Асаны</a></li>
+									<li><a class="chapters__link" href="./chapter.html">Мантры</a></li>
+									<li><a class="chapters__link" href="./chapter.html">Шаткармы</a></li>
+									<li><a class="chapters__link" href="./chapter.html">Пранаяма</a></li>
+									<li><a class="chapters__link" href="./chapter.html">Медитация</a></li>
+									<li><a class="chapters__link" href="./chapter.html">Саморазвитие</a></li>
+								</ul>
+							</div>
+						</aside>
+
+						<div class="section-page__content">
+							<h2 class="heading-3 no-text-indent">Послушайте аудио</h2>
+							<div class="sound js-sound">
+								<button class="sound__button js-sound-button">
+									<svg class="sound__button-icon sound__button-icon--play" width="36" height="36" viewBox="0 0 36 36" fill="currentColor">
+										<use href="./assets/icons/icon-play.svg"></use>
+									</svg>
+									<svg class="sound__button-icon sound__button-icon--pause" width="36" height="36" viewBox="0 0 36 36" fill="currentColor">
+										<use href="./assets/icons/icon-pause.svg"></use>
+									</svg>
+								</button>
+								<div class="sound__container">
+									<div class="sound__wave js-sound-wave" data-sound-url="./assets/audio/sound.wav"></div>
+									<div class="sound__time">
+										<svg class="sound__time-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+											<use href="./assets/icons/icon-clock.svg"></use>
+										</svg>
+										<span class="sound__time-value js-sound-time">--:--:--</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="contents">
+								<h2 class="contents__heading fs-large">Содержание</h2>
+								<ol class="contents__list">
+									<li><a class="contents__link" href="#anchor-1">Намеки древних писаний, символов и знаков</a></li>
+									<li><a class="contents__link" href="#anchor-2">Языковая общность</a></li>
+								</ol>
+							</div>
+
+							<div class="section-page__article">
+								<p>
+									Надеюсь, вы были в Индии и имеете представление об этой многообразной и мультикультурной стране. А кто-то даже практикует йогу. Какое-либо
+									направление или стиль. Тогда вам наверняка будут интересны малоизвестные факты из прошлого, которые позволят более осознанно практиковать йогу
+									современному человеку, познавая самого себя. А, возможно, кто-то захочет глубже разобраться в поднимаемой в этой статье теме.
+								</p>
+
+								<p>
+									Итак, с чего же всё началось?
+								</p>
+
+								<p>
+									Когда я первый раз в этой жизни попал к истокам Ганги, на меня произвели сильное впечатление мудрецы, которые встречались на узкой тропинке от
+									Ганготри до Гомукха и в окрестностях. И не только в их энергетике дело. Между нами был языковой барьер, я не мог понимать, что они говорили на
+									хинди, кроме интернационального приветствия — Ари Ом.:) Впечатлили меня их лица, правильные черты лица. Нигде больше в Индии я не встречал такой
+									концентрации людей, черты лица которых так походят на живущих сейчас на территории России, Белоруссии или Украины. Очевидно, напрашивался вывод
+									—
+									часть народов в наших странах, имеют общие генетические корни, как следствие культурные и нравственные. Это был очередной звонок, мотивирующий
+									лучше
+									разобраться: почему я и в этой жизни начал заниматься йогой?
+								</p>
+
+								<p>
+									Впервые в текстах, которые дошли до нашего времени в академической науке и избежали огня пожаров, упомянул об Индии тверской купец Афанасий
+									Никитин.
+									Он совершил в XV веке путешествие в эту далёкую страну и принёс сведения о ней, изложенные в путевых записях «Хождение за три моря». В
+									дальнейшем
+									путешествия в Индию совершали в XVIII веке Филипп Ефремов и Герасим Лебедев. Последний настолько увлекся индийской культурой, что выучил
+									бенгали,
+									хиндустани, санскрит, прожив в Индии 12 лет. В начале XX века было открыто первое Российское императорское генеральное консульство. Его создание
+									—
+									фактор принципиально новых взаимоотношений между Россией и Индией. Это способствовало возрастающим торгово-экономическим связям, расширению
+									визитов
+									россиян в Индию и индийцев в Россию, а главное — духовному сближению двух стран.
+								</p>
+
+								<p>
+									Только ли экономические и политические отношения объединяют наши страны? Неужели наша дружба с Индией основывается только на успешной дипломатии
+									и
+									торговле? Современные исследования указывают, что общность наших культур тянется из глубины веков и тысячелетий. Существует гораздо тесная и
+									тонкая
+									связь между нами, которая едва заметна взору, но, вероятно, ощущается и передаётся на уровне генов, чувств. Разделённые горным ландшафтом,
+									множеством промежуточных государств, историческими перипетиями, пережитыми врозь, со временем народы Руси и Индии потеряли предания и
+									воспоминания о
+									былой связи. Давайте посмотрим, что сейчас можно найти в сети на тему взаимосвязи наших стран, вне рамок бизнеса и дипломатии.
+								</p>
+
+								<img src="./assets/images/content-fact-1.jpg" alt="">
+
+								<h3 class="heading-3" id="anchor-1">Намеки древних писаний, символов и знаков</h3>
+
+								<p>
+									Древние писания, Веда, Ригведа и Шастры, иногда описывают события на звёздном небе и другие природные явления, наблюдать которые можно находясь
+									намного севернее территорий современной Индии. И он предположил, что возможно авторы этих писаний, проживали в северных широтах нашей планеты.
+									Эту
+									книгу надо читать целиком, рекомендую. В сети она есть, скачать легко.
+								</p>
+
+								<p>
+									В культурном плане между славянской культурой и древними индийскими писаниями сохраняется не только сходство, а можно это назвать
+									параллельностью
+									или копированием.
+								</p>
+
+								<h3 class="heading-3" id="anchor-2">Языковая общность</h3>
+
+								<p>
+									Из наскальных надписей царя Ашоки (273–232 гг. до н. э.) и из книг выдающегося языковеда Патанджали явствует, что за 300 лет до нашей эры в
+									Северной
+									Индии употреблялся язык, включавший в себя несколько значительно отличавшихся друг от друга диалектов. Он возник в результате неправильного
+									произношения арийского языка женщинами, детьми и шудрами. Этот народный язык называют пракритом от слова пракрити (природа), то есть,
+									«естественный,
+									деревенский, грубый». В более узком значении он называется ещё вторичным пракритом в отличие от первичного пракрита, который уже существовал во
+									времена Вед, из которого и сложился вторичный пракрит — вульгарный санскрит. Стремясь спасти «язык богов» от испорченного пракрита,
+									учёные-пандиты
+									ведического периода очистили его и ограничили грамматическими нормами. Этот очищенный и облагороженный язык и был назван санскритом.
+								</p>
+
+								<p>
+									Как инструмент выражения санскрит не сопоставимо совершеннее любого современного языка. В нём совмещаются возможности передачи философской мысли
+									и
+									богатого ассоциативными смыслами поэтического письма. Разговорный санскрит может обходиться меньшей частью выразительных средств.
+								</p>
+
+								<video controls muted preload="auto" plays-inline>
+									<source src="https://2050today.org/wp-content/uploads/2020/07/Video-Placeholder.mp4?_=6" type="video/mp4">
+								</video>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__body">
+					<div class="footer__logo">
+						<a class="footer__logo-link" href="./">
+							<span class="logo">Лого</span>
+						</a>
+					</div>
+					<nav class="footer__menu">
+						<ul class="footer__menu-list">
+							<li><a class="footer__menu-link" href="./about.html">О проекте</a></li>
+							<li><a class="footer__menu-link" href="./tariffs.html">Тарифы</a></li>
+							<li><a class="footer__menu-link" href="./experts.html">Мастера</a></li>
+							<li><a class="footer__menu-link" href="./library.html">Библиотека</a></li>
+							<li><a class="footer__menu-link" href="./index.html#section-schedule">Расписание</a></li>
+							<li><a class="footer__menu-link" href="./journal.html">Журнал</a></li>
+						</ul>
+						<div class="footer__menu-foot">
+							<button class="footer__menu-button button clr-white hover:stroke-dark js-background-sound-trigger">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-volume.svg"></use>
+									</svg>
+								</span>
+							</button>
+							<a class="footer__menu-button button clr-white hover:stroke-dark" href="#">
+								<span class="button__icon">
+									<svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+										<use href="./assets/icons/icon-user.svg"></use>
+									</svg>
+								</span>
+								<span class="button__text">Личный кабинет</span>
+							</a>
+						</div>
+					</nav>
+				</div>
+				<div class="footer__foot">
+					<div class="footer__text">
+						<p>Copyright 2024 KT. All rights reserved.</p>
+					</div>
+					<div class="footer__links">
+						<a class="footer__link footer__link--opacity-50" href="./policy.html">Политика конфиденциальности</a>
+						<a class="footer__link footer__link--opacity-50" href="./policy.html">Согласие на обработку данных</a>
+						<a class="footer__link" href="#">Made by GoWeb.Pro</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="js-background-sound" data-sound-url="./assets/audio/sound.wav"></div>
+</body>
+
+</html>

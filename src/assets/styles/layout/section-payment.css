@@ -1,0 +1,50 @@
+/* Layout: Section Payment */
+
+.section-payment {
+	position: relative;
+	overflow: hidden;
+	background: var(--clr-primary-100);
+}
+
+.section-payment__container {
+	display: grid;
+	grid-template-columns: 4fr 6fr;
+	gap: var(--space-20);
+}
+
+.section-payment__body {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: var(--space-10);
+}
+
+.section-payment__image {
+	flex: 0 0 auto;
+	width: min(12.5rem, 22.5%);
+	height: auto;
+}
+
+.section-payment__image:nth-child(2n + 2) {
+	margin-top: var(--space-60);
+}
+
+@media screen and (width < 80em) {
+	.section-payment__container {
+		grid-template-columns: 1fr;
+	}
+
+	.section-payment__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.section-payment__image {
+		width: min(6.25rem, 100%);
+	}
+
+	.section-payment__image:nth-child(2n + 2) {
+		margin-top: 0;
+	}
+}

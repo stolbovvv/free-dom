@@ -1,0 +1,63 @@
+/* Component: Fact */
+
+.fact {
+	display: flex;
+	gap: var(--space-60);
+}
+
+.fact--reverse {
+	flex-direction: row-reverse;
+}
+
+.fact__head {
+	display: flex;
+	flex: 0 0 auto;
+	position: relative;
+	width: calc(53% - var(--space-30));
+}
+
+.fact__image,
+.fact__video {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	max-height: 37.5rem;
+	clip-path: polygon(5rem 0%, 100% 0, 100% 100%, 0 100%, 0 5rem);
+}
+
+.fact__body {
+	display: flex;
+	flex: 0 0 auto;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: calc(47% - var(--space-30));
+}
+
+@media screen and (width < 80em) {
+	.fact,
+	.fact--reverse {
+		flex-direction: column;
+		gap: var(--space-40);
+	}
+
+	.fact__head,
+	.fact__body {
+		width: 100%;
+	}
+
+	.fact__image,
+	.fact__video {
+		aspect-ratio: 738/290;
+		clip-path: none;
+		min-height: 13.125rem;
+	}
+}
+
+@media screen and (width < 80em) {
+	.fact,
+	.fact--reverse {
+		gap: var(--space-20);
+	}
+}

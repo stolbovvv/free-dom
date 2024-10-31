@@ -1,0 +1,23 @@
+/* Utilities: Fonts sizes */
+
+.fs-large {
+	font-size: var(--fs-body-lg);
+}
+
+@media screen and (width < 100em) {
+	.fs-large {
+		font-size: var(--fs-body-md);
+	}
+}
+
+@media screen and (width < 80em) {
+	.fs-large {
+		font-size: var(--fs-body-sm);
+	}
+}
+
+@media screen and (width < 48em) {
+	.fs-large {
+		font-size: var(--fs-body-xs);
+	}
+}

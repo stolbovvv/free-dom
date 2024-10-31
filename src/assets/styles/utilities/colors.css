@@ -1,0 +1,21 @@
+/* Utilities: Colors */
+
+.clr-white {
+	color: var(--clr-neutral-100);
+}
+
+.clr-light {
+	color: var(--clr-neutral-300);
+}
+
+.clr-dark {
+	color: var(--clr-neutral-700);
+}
+
+.clr-black {
+	color: var(--clr-neutral-900);
+}
+
+.clr-primary {
+	color: var(--clr-primary-400);
+}

@@ -1,0 +1,36 @@
+.contents {
+	padding: var(--space-30);
+	background: var(--clr-primary-100);
+}
+
+.contents__heading {
+	margin: 0;
+}
+
+.contents__list {
+	display: flex;
+	flex-direction: column;
+	margin: 0.5em 0 0;
+	padding: 0 0 0 1em;
+}
+
+.contents__list > li {
+	margin-top: 0.5em;
+}
+
+.contents__link {
+	display: block;
+	transition: all var(--transition-ease-sm);
+	color: currentColor;
+	text-decoration: none;
+}
+
+.contents__link:hover {
+	color: var(--clr-primary-400);
+}
+
+@media screen and (width < 80em) {
+	.contents {
+		padding: var(--space-20);
+	}
+}

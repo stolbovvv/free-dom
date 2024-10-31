@@ -1,0 +1,6 @@
+.quote {
+	display: block;
+	padding: 1em;
+	background: var(--clr-primary-100);
+	border-left: 0.25rem solid #bad6ff;
+}

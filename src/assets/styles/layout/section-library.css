@@ -1,0 +1,39 @@
+/* Layout: Section Library */
+
+.section-library {
+	background: var(--clr-primary-100);
+	overflow: hidden;
+}
+
+.section-library__container {
+	position: relative;
+}
+
+.section-library__head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: var(--space-20);
+}
+
+.section-library__body {
+	margin-top: var(--space-60);
+	overflow: visible;
+}
+
+@media screen and (width < 80em) {
+	.section-library__body {
+		margin-top: var(--space-40);
+	}
+}
+
+@media screen and (width < 48em) {
+	.section-library__body {
+		margin-top: var(--space-20);
+	}
+
+	.section-library__mobile-navigation {
+		margin-top: var(--space-20);
+	}
+}

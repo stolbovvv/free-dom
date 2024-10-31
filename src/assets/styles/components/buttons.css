@@ -1,0 +1,179 @@
+/* Component: Button */
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin: 0;
+	border: none;
+	border-radius: 999rem;
+	padding: 0;
+	background: none;
+	font-size: var(--fs-body-lg);
+	text-decoration: none;
+	color: var(--clr-primary-400);
+	stroke: currentColor;
+	transition: all var(--transition-ease-sm);
+	cursor: pointer;
+}
+
+.button__icon {
+	position: relative;
+	width: 2.7275em;
+	height: 2.7275em;
+	border-top: 1px solid currentColor;
+	border-left: 1px solid currentColor;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid currentColor;
+	border-radius: 50%;
+	padding: 0.6364em;
+	transition: inherit;
+}
+
+.button.is-paused .button__icon::before,
+.button.is-paused .button__icon::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	height: 1px;
+	background: currentColor;
+}
+
+.button.is-paused .button__icon::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.button.is-paused .button__icon::after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.button.is-paused.hover\:stroke-white:hover .button__icon::before {
+	background: var(--clr-neutral-100);
+}
+
+.button.is-paused.hover\:stroke-white:hover .button__icon::after {
+	background: var(--clr-neutral-100);
+}
+
+.button.is-paused.hover\:stroke-light:hover .button__icon::before {
+	background: var(--clr-neutral-300);
+}
+
+.button.is-paused.hover\:stroke-light:hover .button__icon::after {
+	background: var(--clr-neutral-300);
+}
+
+.button.is-paused.hover\:stroke-dark:hover .button__icon::before {
+	background: var(--clr-neutral-700);
+}
+
+.button.is-paused.hover\:stroke-dark:hover .button__icon::after {
+	background: var(--clr-neutral-700);
+}
+
+.button.is-paused.hover\:stroke-primary:hover .button__icon::before {
+	background: var(--clr-primary-400);
+}
+
+.button.is-paused.hover\:stroke-primary:hover .button__icon::after {
+	background: var(--clr-primary-400);
+}
+
+.button__icon > svg {
+	width: 100%;
+	height: 100%;
+	stroke: inherit;
+}
+
+.button.is-paused .button__icon > svg {
+	opacity: 0.5;
+}
+
+.button:is(:active) {
+	transform: scale(0.95);
+}
+
+.button:is(:hover) {
+	outline: none;
+}
+
+.button:is(:hover) .button__icon {
+	background-color: currentColor;
+}
+
+@media screen and (width < 100em) {
+	.button {
+		font-size: var(--fs-body-md);
+	}
+}
+
+@media screen and (width < 80em) {
+	.button {
+		font-size: var(--fs-body-sm);
+	}
+}
+
+@media screen and (width < 48em) {
+	.button {
+		font-size: var(--fs-body-xs);
+	}
+}
+
+/* Component: Button Tab */
+
+.button-tab {
+	border: 1px solid currentColor;
+	background: none;
+	padding: 0.5em 1.75em;
+	font-size: var(--fs-body-lg);
+	transition: all var(--transition-ease-sm) 0s;
+	cursor: pointer;
+}
+
+.button-tab--small {
+	padding: 0.5em 0.75em;
+	font-size: var(--fs-body-md);
+}
+
+.button-tab:hover {
+	color: var(--clr-primary-400);
+}
+
+.button-tab:active {
+	transform: scale(0.95);
+}
+
+.button-tab.is-active {
+	color: var(--clr-primary-400);
+	pointer-events: none;
+}
+
+@media screen and (width < 100em) {
+	.button-tab {
+		font-size: var(--fs-body-md);
+	}
+
+	.button-tab--small {
+		font-size: var(--fs-body-sm);
+	}
+}
+
+@media screen and (width < 80em) {
+	.button-tab {
+		font-size: var(--fs-body-sm);
+	}
+
+	.button-tab--small {
+		font-size: var(--fs-body-xs);
+	}
+}
+
+@media screen and (width < 48em) {
+	.button-tab,
+	.button-tab--small {
+		font-size: var(--fs-body-xs);
+	}
+}

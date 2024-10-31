@@ -1,0 +1,30 @@
+/* Component: Card Event */
+
+.card-event {
+	display: flex;
+	flex-direction: column;
+	transition: opacity var(--transition-ease-md) 0s;
+}
+
+.card-event > * + * {
+	margin-top: var(--space-20);
+}
+
+.card-event__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	aspect-ratio: 9 / 5;
+}
+
+@media screen and (width >= 48em) {
+	.card-event:not(.is-active) {
+		opacity: 0.125;
+	}
+
+	.card-event.is-active,
+	.card-event.is-active + .card-event {
+		opacity: 1;
+	}
+}

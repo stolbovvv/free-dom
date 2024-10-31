@@ -1,0 +1,44 @@
+/* Custom properties */
+
+:root {
+	--clr-neutral-100: #ffffff;
+	--clr-neutral-300: #d9d9d9;
+	--clr-neutral-700: #343434;
+	--clr-neutral-900: #202020;
+
+	--clr-primary-100: #eef5ff;
+	--clr-primary-400: #4b87e1;
+
+	--ff-body: "SF Pro Display", sans-serif;
+	--ff-primary: "Montserrat Alternates", sans-serif;
+	--ff-secondary: "Prego", sans-serif;
+
+	--fs-body-xs: 0.875rem;
+	--fs-body-sm: 1rem;
+	--fs-body-md: 1.125rem;
+	--fs-body-lg: 1.375rem;
+
+	--fs-heading-xs: 1.375rem;
+	--fs-heading-sm: 1.625rem;
+	--fs-heading-md: 2.25rem;
+	--fs-heading-lg: 2.625rem;
+	--fs-heading-xl: 3rem;
+	--fs-heading-2xl: 3.625rem;
+	--fs-heading-3xl: 4.25rem;
+	--fs-heading-4xl: 5.5rem;
+	--fs-heading-5xl: 5.625rem;
+
+	--lh-body: 1.4;
+	--lh-heading: 1;
+
+	--space-10: 0.625rem;
+	--space-20: 1.25rem;
+	--space-30: 1.875rem;
+	--space-40: 2.5rem;
+	--space-50: 3.125rem;
+	--space-60: 3.75rem;
+
+	--transition-ease-sm: 0.2s ease;
+	--transition-ease-md: 0.4s ease;
+	--transition-ease-lg: 0.6s ease;
+}

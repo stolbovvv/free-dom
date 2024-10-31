@@ -1,0 +1,12 @@
+/* Utilities: Container */
+
+.container {
+	width: min(105rem, 100% - 3.75rem * 2);
+	margin-inline: auto;
+}
+
+@media screen and (width < 80em) {
+	.container {
+		width: min(72.5rem, 100% - 0.9375rem * 2);
+	}
+}

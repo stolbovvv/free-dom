@@ -1,0 +1,70 @@
+/* Layout: Section Masters */
+
+.section-masters {
+	position: relative;
+	overflow: hidden;
+	background: var(--clr-neutral-100);
+}
+
+.section-masters__decor {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 40vw;
+}
+
+.section-masters__head {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: var(--space-20);
+}
+
+.section-masters__body {
+	margin-top: calc(var(--space-60) * 2);
+}
+
+@media screen and (width < 80em) {
+	.section-masters__body {
+		margin-top: var(--space-40);
+	}
+}
+
+@media screen and (width < 48em) {
+	.section-masters__head {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.section-masters__body {
+		margin-top: var(--space-20);
+	}
+}
+
+@media screen and (width >= 48em) {
+	.section-masters__grid {
+		/* stylelint-disable-next-line declaration-no-important */
+		display: flex !important; /* Переопределение для Splide */
+		flex-direction: column;
+		gap: var(--space-40);
+	}
+
+	.section-masters__grid > *:nth-child(2n + 2) {
+		align-self: flex-end;
+	}
+}
+
+@media screen and (width >= 100em) {
+	.section-masters__grid {
+		/* stylelint-disable-next-line declaration-no-important */
+		display: grid !important; /* Переопределение для Splide */
+		grid-template-columns: 1fr 1fr;
+		gap: calc(var(--space-50) * 3);
+	}
+
+	.section-masters__slide:nth-child(3) {
+		display: flex;
+		justify-content: center;
+		grid-column: span 2;
+	}
+}

@@ -1,0 +1,41 @@
+/* Utilities: Fill */
+
+.fill-white {
+	fill: var(--clr-neutral-100);
+}
+
+.fill-light {
+	fill: var(--clr-neutral-300);
+}
+
+.fill-dark {
+	fill: var(--clr-neutral-700);
+}
+
+.fill-black {
+	fill: var(--clr-neutral-900);
+}
+
+.fill-primary {
+	fill: var(--clr-primary-400);
+}
+
+.hover\:fill-white:hover {
+	fill: var(--clr-neutral-100);
+}
+
+.hover\:fill-light:hover {
+	fill: var(--clr-neutral-300);
+}
+
+.hover\:fill-dark:hover {
+	fill: var(--clr-neutral-700);
+}
+
+.hover\:fill-black:hover {
+	fill: var(--clr-neutral-900);
+}
+
+.hover\:fill-primary:hover {
+	fill: var(--clr-primary-400);
+}

@@ -1,0 +1,81 @@
+/* Layout: Section Journal */
+
+.section-journal {
+	overflow: hidden;
+}
+
+.section-journal__descr {
+	max-width: 52rem;
+}
+
+.section-journal__body {
+	position: relative;
+	margin-top: var(--space-60);
+}
+
+.section-journal__tabs {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	gap: var(--space-20);
+}
+
+.section-journal__content {
+	margin-top: var(--space-60);
+	width: 100%;
+	visibility: visible;
+}
+
+.section-journal__content:not(.is-active) {
+	display: none;
+}
+
+.section-journal__slider {
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	margin-top: var(--space-60);
+	overflow: visible;
+}
+
+.section-journal__slider-track {
+	width: 100%;
+	overflow: visible;
+	cursor: grab;
+}
+
+.section-journal__slider-track:active {
+	cursor: grabbing;
+}
+
+.section-journal__more {
+	margin-top: var(--space-40);
+}
+
+@media screen and (width < 80em) {
+	.section-journal__body,
+	.section-journal__content,
+	.section-journal__slider {
+		margin-top: var(--space-40);
+	}
+
+	.section-journal__more {
+		margin-top: var(--space-20);
+	}
+}
+
+@media screen and (width < 48em) {
+	.section-journal__tabs {
+		gap: var(--space-10);
+	}
+
+	.section-journal__body,
+	.section-journal__content,
+	.section-journal__slider {
+		margin-top: var(--space-20);
+	}
+
+	.section-journal__more {
+		margin-top: var(--space-10);
+	}
+}

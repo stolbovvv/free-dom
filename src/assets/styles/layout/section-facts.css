@@ -1,0 +1,31 @@
+/* Layout: Section Facts */
+
+.section-facts {
+	display: flex;
+	position: relative;
+}
+
+.section-facts__container {
+	display: grid;
+	gap: 6.25rem;
+}
+
+@media screen and (width < 80em) {
+	.section-facts {
+		padding-block: var(--space-40);
+	}
+
+	.section-facts__container {
+		gap: var(--space-40);
+	}
+}
+
+@media screen and (width < 48em) {
+	.section-facts {
+		padding-block: var(--space-20);
+	}
+
+	.section-facts__container {
+		gap: var(--space-20);
+	}
+}

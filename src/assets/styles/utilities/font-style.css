@@ -1,0 +1,10 @@
+/* Utility: Font style */
+
+.fs-italic {
+	font-style: italic;
+}
+
+.no-text-indent,
+.no-text-indent * {
+	text-indent: 0;
+}
