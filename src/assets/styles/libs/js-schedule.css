@@ -1,5 +1,9 @@
 .js-schedule {
-	overflow: hidden;
+	visibility: hidden;
+}
+
+.js-schedule.is-init {
+	visibility: visible;
 }
 
 .js-schedule-header {
@@ -73,5 +77,15 @@
 @media screen and (width < 80em) {
 	.js-schedule-days-grid {
 		grid-template-columns: 1fr;
+	}
+
+	.js-schedule-day-slot__button {
+		background: none;
+		border: none;
+		color: inherit;
+	}
+
+	.js-schedule-day-slot__body {
+		overflow: hidden;
 	}
 }

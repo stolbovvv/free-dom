@@ -16,39 +16,25 @@ function renderScheduleCard(event) {
 	`;
 }
 
-// Пример использования
-const weeklyEvents = {
-	'2024-10-14': [
-		// Неделя с 14 октября 2024
-		{ day: 1, time: '09:00', title: 'Йога', duration: 1 },
-		{ day: 1, time: '12:00', title: 'Встреча с Татьяной', duration: 1 },
-		{ day: 2, time: '12:00', title: 'Встреча с Татьяной вторник', duration: 1.5 },
-	],
-	'2024-10-21': [
-		// Неделя с 21 октября 2024
-		{ day: 2, time: '10:00', title: 'Танцы', duration: 2 },
-		{ day: 4, time: '15:00', title: 'Мастер-класс', duration: 1.5 },
-	],
-	'2024-10-28': [
-		// Неделя с 28 октября 2024
-		{ day: 3, time: '11:00', title: 'Врач', duration: 1 },
-		{ day: 5, time: '14:00', title: 'Собрание', duration: 1.5 },
-	],
-	'2024-10-07': [
-		// Неделя с 7 октября 2024 (раньше текущей)
-		{ day: 1, time: '10:00', title: 'Визит в библиотеку', duration: 1 },
-		{ day: 5, time: '13:00', title: 'Рабочая встреча', duration: 1 },
-	],
-};
-
 window.addEventListener('DOMContentLoaded', () => {
 	/* Базовые модули */
 	new SiteNavbar();
 	new SiteHeader();
-	new Schedule(weeklyEvents, renderScheduleCard);
 	new Sound();
 	new BackgroundSound();
 	new Tabs('#section-journal-tabs');
+
+	fetch('https://goweb.pro/test/ya_yest_json.json')
+		.then((data) => data.json())
+		.then((data) => {
+			new Schedule(data, renderScheduleCard);
+		})
+		.catch((err) => {
+			document.querySelector('.section-schedule__body').innerHTML = `
+				<p class="section-schedule__body-error">Не удалось загрузить расписание, попробуйте позже...</p>
+			`;
+			console.error(err);
+		});
 
 	/* Интерактивные галереи */
 	Fancybox.bind('[data-fancybox="certificates"]');

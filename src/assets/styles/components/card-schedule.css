@@ -58,3 +58,9 @@
 		box-shadow: 0 8px 16px rgba(0, 0, 0, 50%);
 	}
 }
+
+@media screen and (width < 80em) {
+	.card-schedule {
+		aspect-ratio: 10/6;
+	}
+}

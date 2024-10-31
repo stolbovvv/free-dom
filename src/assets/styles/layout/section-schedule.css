@@ -36,6 +36,11 @@
 	position: relative;
 }
 
+.section-schedule__body-error {
+	font-size: var(--fs-body-md);
+	font-style: italic;
+}
+
 @media screen and (width < 80em) {
 	.section-schedule__container {
 		gap: var(--space-40);
