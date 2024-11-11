@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	new BackgroundSound();
 	new Tabs('#section-journal-tabs');
 
-	fetch('https://goweb.pro/test/ya_yest_json.json')
+	fetch('https://free-dom.goweb.pro/wp-json/ec/v1/events')
 		.then((data) => data.json())
 		.then((data) => {
 			new Schedule(data, renderScheduleCard);
