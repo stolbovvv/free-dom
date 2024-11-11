@@ -1,0 +1,50 @@
+.card-architecture {
+	padding: var(--space-50);
+	background-color: var(--clr-primary-100);
+	font-size: var(--fs-body-lg);
+}
+
+.card-architecture > * {
+	text-indent: 0;
+}
+
+.card-architecture > *:last-child {
+	margin-bottom: 0;
+}
+
+.card-architecture__heading {
+	margin: 0;
+	font-size: var(--fs-heading-lg);
+	font-family: var(--ff-primary);
+	font-weight: 300;
+	line-height: var(--lh-heading);
+	text-indent: 0;
+}
+
+@media screen and (width < 100em) {
+	.card-architecture__heading {
+		font-size: var(--fs-heading-md);
+	}
+}
+
+@media screen and (width < 80em) {
+	.card-architecture {
+		padding: var(--space-30);
+		font-size: var(--fs-body-sm);
+	}
+
+	.card-architecture__heading {
+		font-size: var(--fs-heading-sm);
+	}
+}
+
+@media screen and (width < 48em) {
+	.card-architecture {
+		padding: var(--space-20);
+		font-size: var(--fs-body-xs);
+	}
+
+	.card-architecture__heading {
+		font-size: var(--fs-heading-xs);
+	}
+}

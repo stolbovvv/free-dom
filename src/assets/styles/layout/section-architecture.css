@@ -1,0 +1,97 @@
+/* Layout: Section Architecture */
+.section-architecture {
+	position: relative;
+	overflow: hidden;
+}
+
+.section-architecture__container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-60);
+}
+
+.section-architecture__head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: var(--space-20);
+}
+
+.section-architecture__body {
+	display: flex;
+	flex-direction: column;
+}
+
+.section-architecture__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--space-30);
+}
+
+.section-architecture__card {
+	position: relative;
+}
+
+.section-architecture__card:nth-child(1n + 3) {
+	grid-column: span 2;
+}
+
+.section-architecture__card:nth-child(1) {
+	--clip-size: var(--space-50);
+
+	clip-path: polygon(var(--clip-size) 0%, 100% 0, 100% 100%, 0 100%, 0 var(--clip-size));
+}
+
+.section-architecture__card:nth-child(1)::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 35%;
+	aspect-ratio: 1;
+	background: url("../../images/decor-card-architecture-1.svg") top right / contain no-repeat;
+	pointer-events: none;
+}
+
+.section-architecture__card:nth-child(2)::before {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 35%;
+	aspect-ratio: 1;
+	background: url("../../images/decor-card-architecture-2.svg") bottom right / contain no-repeat;
+	pointer-events: none;
+}
+
+.section-architecture__foot {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: var(--space-20);
+}
+
+@media screen and (width < 80em) {
+	.section-architecture__container {
+		gap: var(--space-40);
+	}
+
+	.section-architecture__grid {
+		grid-template-columns: 1fr;
+		gap: var(--space-20);
+	}
+
+	.section-architecture__card:nth-child(1n + 3) {
+		grid-column: auto;
+	}
+
+	.section-architecture__card:nth-child(1) {
+		--clip-size: var(--space-30);
+	}
+}
+
+@media screen and (width < 80em) {
+	.section-architecture__container {
+		gap: var(--space-20);
+	}
+}

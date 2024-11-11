@@ -144,6 +144,11 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 
 	/* Перенос элементов */
+	moveElementOnMediaQuery('#project-video', '(max-width: 99.99em)', {
+		targetContainer: '#project-video-tablet-container',
+		sourceContainer: '#project-video-desktop-container',
+	});
+
 	moveElementOnMediaQuery('#section-events-navigation', '(max-width: 47.99em)', {
 		targetContainer: '#section-events-mobile-navigation',
 		sourceContainer: '#section-events-desktop-navigation',

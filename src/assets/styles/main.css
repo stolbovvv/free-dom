@@ -26,6 +26,7 @@
 @import url("components/card-review.css");
 @import url("components/card-expert.css");
 @import url("components/card-schedule.css");
+@import url("components/card-architecture.css");
 @import url("components/schedule.css");
 @import url("components/splide.css");
 @import url("components/tariffs.css");
@@ -45,6 +46,7 @@
 @import url("layout/section.css");
 @import url("layout/section-page.css");
 @import url("layout/section-hero.css");
+@import url("layout/section-architecture.css");
 @import url("layout/section-events.css");
 @import url("layout/section-project.css");
 @import url("layout/section-journal.css");
